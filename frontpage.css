@@ -1,0 +1,26 @@
+.FF {
+  margin: 0;
+	text-align: center;
+  line-height: 0.1;
+}
+
+.FF h1 {
+  font-family: "Impact", sans-serif;
+  font-size: 90px;
+}
+.FF h2 {
+  font-family: "Impact", sans-serif;
+  font-size: 80px;
+}
+
+.leagues p {
+  margin: 0;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 2;
+}
+.leagues span {
+  border-style: groove;
+  padding: 5px;
+}
