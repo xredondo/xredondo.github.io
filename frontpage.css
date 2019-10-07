@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'OswaldHeavy';
+    src: url('oswald-heavy-webfont.woff2') format('woff2'),
+         url('oswald-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .FF {
   margin: 0;
 	text-align: center;
@@ -5,12 +14,12 @@
 }
 
 .FF h1 {
-  font-family: "Impact", sans-serif;
-  font-size: 90px;
+  font-family: "OswaldHeavy";
+  font-size: 777%;
 }
 .FF h2 {
-  font-family: "Impact", sans-serif;
-  font-size: 80px;
+  font-family: "OswaldHeavy";
+  font-size: 672%;
 }
 
 .leagues p {
