@@ -1,75 +1,201 @@
-html, body {
+* {
   margin:0;
   padding:0;
+  box-sizing: border-box;
 }
 
-body {
-  position:relative;
-  height:200px;
+html,body {
+  height:100%;
+  margin:0;
+  -webkit-font-smoothing: antialiased;
 }
 
-.nav {
-  margin:0px;
+@font-face {
+    font-family: 'metropolismedium';
+    src: url('metropolis-medium-webfont.woff2') format('woff2'),
+         url('metropolis-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.navbar{
-  background:transparent;
-  background-color:transparent;
-  border-color:transparent;
-  margin-bottom:0px;
-  font-family: 'Droid Serif', serif;
-  font-size:20px;
+a {
+  text-decoration: none;
+  display: block;
+  color:white;
 }
 
-.navbar-brand {
-  font-size:20px;
-  font-family: 'Droid Serif', serif;
+a:hover{
+  color:black;
 }
 
-header {
-  text-align: center;
-  color: #fff;
-  background-attachment: scroll;
-  background-position: center center;
-  background-repeat: none;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-color: purple;
+nav {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  background-color: none;
+  position: fixed;
+  left: 1%;
+  top: 0;
+  width: 98%;
+  z-index:100;
+  font-family: metropolismedium;
 }
 
-header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
-
+.navlogo {
+  letter-spacing: 5px;
 }
 
-header .intro-text .intro-heading {
-  margin-bottom: 25px;
-  font-family: LeagueGothic;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
-
+nav a{
+  padding: 5px 20px;
 }
 
-.almamater {
-  font-size: 20px;
-
+.navlinks>li {
+  list-style: none;
+  padding: 0px 10px;
+  letter-spacing: 3px;
 }
 
-@media(min-width:768px) {
-  header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+.burgerline {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  border: none;
+  background-color: white;
+}
+
+.opaqueNavbar {
+	background-color: white;
+	opacity: 0.8;
+	color: black !important;
+	transition: 0.5s;
+}
+
+.opaqueNavbar a {
+  color: black !important;
+}
+
+.opaqueNavbar .burgerline {
+  background-color: black !important;
+}
+
+/* navigation media */
+@media only screen and (min-width: 600px){
+  nav {
+    padding:20px;
+    margin-top:10px;
+    align-items: center;
   }
 
-  header .intro-text .intro-heading {
-    margin-bottom: 50px;
-    font-family: LeagueGothic;
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 75px;
+  .navlogo {
+    position: absolute;
+    left:5;
+  }
+
+  .navResp {
+    position: absolute;
+    right:0;
+  }
+
+  .navlinks{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .burger{
+    display: none;
+    z-index: 101;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  nav {
+    padding:5px;
+    margin-top:5px;
+    flex-direction: column;
+  }
+
+  .navlogo {
+    position: relative;
+    left:0;
+  }
+
+  .navResp {
+    position: relative;
+    right:0;
+  }
+
+  .hidden {
+    display:none;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    right: 3%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .burger:focus, .burger:hover{
+    border: none;
+  }
+
+  .clickedbutton{
+    background-color: grey !important;
+    opacity: 0.8 !important;
+  }
+}
+
+
+header {
+  display:block;
+}
+
+header .homepage-header {
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.header-text {
+  color:white;
+  text-align: center;
+  position: relative;
+}
+
+.header-text p{
+  font-family: metropolismedium;
+
+  background-color: none;
+}
+
+/* header meadia */
+@media only screen and (min-width: 600px){
+  header .homepage-header {
+    background-image: url(header1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+  }
+
+  .header-text {
+    top: 50%;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  header .homepage-header {
+    background-image: url(header2.jpg);
+    background-size: 100%;
+    background-position: top;
+    height: 400px;
+  }
+  .header-text {
+    top: 30%;
+    font-size: 20px;
   }
 }

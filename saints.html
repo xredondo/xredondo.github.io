@@ -1,63 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
-    <!-- Custom CSS -->
-    <link href="main.css" rel="stylesheet" type='text/css'>
-    <!--font family-->
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!--Navigation-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" >
-      <div class="container-fluid">
-        <!--page scroll button for -->
-        <div class="navbar-header" role="navigation">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target= "#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Saints FF</a>
-        </div>	<!--page scroll button-->
-        <div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li ><a href="/saints">Saints Home</a></li>
-              <li ><a href="/saints/2019">2019</a></li>
-              <li ><a href-"/saints/archives">Archives</a></li>
-            </ul>
-          </div> <!--ul-li-->
-        </div> <!--navbar collapse-->
-      </div> <!--container-fluid-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="main.css" rel="stylesheet" type='text/css'>
+</head>
+<body>
+    <nav id="navTransitionId">
+      <div class="navlogo">
+        <a href="/saints"><p>SAINTS</p></a>
+      </div>
+      <button class="burger">
+          <div class="burgerline"></div>
+          <div class="burgerline"></div>
+          <div class="burgerline"></div>
+      </button>
+      <div class="navResp">
+        <ul class="navlinks hidden" id="divdropdown">
+            <li><a href="/saints">HOME</a></lis>
+            <li><a href="/saints/2019">2019</a></li>
+            <li><a href="/saints/archives">ARCHIVES</a></li>
+        </ul>
+      </div>
     </nav>
-    <!--Navigation-->
-    <!--Header-->
     <header>
-      <div class="container" >
-        <div class="intro-text">
-          <div class="intro-heading" >SAINTS HOME</div>
-					<div class="almamater">
-						When the twilight shadows gather, Out&nbsp;upon&nbsp;your&nbsp;sorry&nbsp;team,<br>
-	          When the losses start amassing, And&nbsp;'champ'&nbsp;turns&nbsp;to&nbsp;pipe&nbsp;dream,<br>
-	          Luckless owners of this fantasy league, Talk&nbsp;a&nbsp;bunch&nbsp;of&nbsp;shit,<br>
-	          To this season's likely winner, and&nbsp;how&nbsp;he's&nbsp;a&nbsp;twit.
-					</div>
-				 </div>
+      <div class="homepage-header">
+        <div class="header-text">
+          <p>When the twilight shadows gather, Out&nbsp;upon&nbsp;your&nbsp;sorry&nbsp;team,</p>
+          <p>When the losses start amassing, And&nbsp;'champ'&nbsp;turns&nbsp;to&nbsp;pipe&nbsp;dream,</p>
+          <p>Luckless owners of this fantasy league, Talk&nbsp;a&nbsp;bunch&nbsp;of&nbsp;shit,</p>
+          <p>To this season's likely winner, and&nbsp;how&nbsp;he&nbsp;sucks&nbsp;dick.</p>
+        </div>
       </div>
     </header>
-		<div style="height:1500px; background-color: black;"></div>
+    <div style="background-color:purple;height:1000px"></div>
 
-    <!--Header-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
-		<script src="main.js"></script>
-  </body>
+
+<script src="jquery3-4-1.js" type="text/javascript"></script>
+<script src="main.js" type="text/javascript"></script>
+
+
+</body>
 </html>
