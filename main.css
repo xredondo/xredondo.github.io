@@ -269,8 +269,9 @@ header .homepage-header {
 
 }
 
+/* announcement stuff */
 .announcements {
-  padding: 15px;
+  padding: 30px 15px;
   font-family: metropolismedium;
   justify-content: center;
 }
@@ -281,6 +282,11 @@ header .homepage-header {
 
 .announcements p{
   text-align: left;
+  padding-bottom: 2px;
+}
+
+.ann-text p::first-letter {
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 600px){
@@ -318,6 +324,26 @@ header .homepage-header {
   }
 }
 
+/*link boxes */
+.iconlinks {
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 600px){
+  .linkbox {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .linkbox {
+    height: 100px;
+    width: 100px;
+  }
+}
 
 /* footer styling */
 footer {
