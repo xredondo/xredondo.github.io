@@ -1,31 +1,76 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-      <title>Leagues</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-      <link rel="manifest" href="/site.webmanifest">
-      <meta name="msapplication-TileColor" content="#da532c">
-      <meta name="theme-color" content="#ffffff">
-    
-      <!--Stylesheets-->
-      <link rel="stylesheet" href="frontpage.css">
-  </head>
-  <body>
-    <section>
-        <div class="FF">
-          <h1>FANTASY</h1>
-          <h2>FOOTBALL</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="main.css" rel="stylesheet" type='text/css'>
+</head>
+<body>
+    <nav id="navTransitionId">
+      <div class="navlogo">
+        <a href="/"><p>SAINTS</p></a>
+      </div>
+      <button class="burger">
+          <div class="burgerline"></div>
+          <div class="burgerline"></div>
+          <div class="burgerline"></div>
+      </button>
+      <div class="navResp">
+        <ul class="navlinks hidden" id="divdropdown">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/2019">2019</a></li>
+            <li><a href="/archives">ARCHIVES</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="homepage-header">
+        <div class="header-text">
+          <h1>SAINTS FANTASY FOOTBALL</h1>
         </div>
-    </section>
-    <section>
-        <div class="leagues">
-          <p><a href="/saints"><span>Saints</span></a></p>
-    </section>
-  </body>
+      </div>
+    </header>
+
+    <div class="box announcements" id="scroll-fadein">
+      <div class="col-3 mcol-12">
+        <h3>Announcements</h3>
+      </div>
+      <div class="col-6 mcol-12 ann-text" id="announcement-text">
+          <p>Q: What the hell Xavier?</p>
+          <p>A: My dumbass made a website. Thought it would be fun.</p>
+          <p>Q: What is the point of this site?</p>
+          <p>A: Fantasy football purposes.</p>
+          <p>Q: What!? I have to look at Sleeper and this site? Or are we migrating totally to this site?</p>
+          <p>A: No, this site is to maintain history since we switched platforms. Think of this as a low-budget/single purpose blog.</p>
+          <p>Q: This is a lot more public than a chat.</p>
+          <p>A: Yes. Anything not already public will be discussed before put up on this site.</p>
+      </div>
+    </div>
+
+
+    <div class="box iconlinks">
+      <div class="col-3 linkbox" style="background-color:purple;">
+      </div>
+      <div class="col-3 linkbox" style="background-color:purple;">
+      </div>
+      <div class="col-3 linkbox" style="background-color:purple;">
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-text">
+        <p>When the twilight&nbsp;shadows&nbsp;gather, Out&nbsp;upon&nbsp;your&nbsp;sorry&nbsp;team,</p>
+        <p>When the losses start amassing, 'Champ'&nbsp;turning&nbsp;to&nbsp;pipe&nbsp;dream,</p>
+        <p>Luckless owners of this fantasy league, Talk&nbsp;a&nbsp;bunch&nbsp;of&nbsp;shit,</p>
+        <p>To this season's likely winner, And&nbsp;how&nbsp;he&nbsp;sucks&nbsp;dick.</p>
+      </div>
+    </footer>
+
+
+<script src="jquery3-4-1.js" type="text/javascript"></script>
+<script src="main.js" type="text/javascript"></script>
+
+
+</body>
 </html>
