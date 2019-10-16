@@ -185,6 +185,11 @@ header .homepage-header {
   text-align: center;
   position: relative;
   letter-spacing: 4px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 .header-text h1{
@@ -214,13 +219,13 @@ header .homepage-header {
 @media only screen and (max-width: 600px){
   header .homepage-header {
     background-image: url(header2.jpg);
-    background-size: 100%;
-    background-position: bottom 45% center;
-    height: 400px;
+    background-size: 160%;
+    background-position: top center;
+    height: 700px;
   }
   .header-text {
     top: 70%;
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
