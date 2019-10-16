@@ -41,7 +41,7 @@ a:after {
     width: 0;
   }
 
-a:hover:afters {
+a:hover:after {
     width: 100%;
     left: 0;
   }
