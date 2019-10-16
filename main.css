@@ -28,7 +28,7 @@ a:hover{
   color:white;
 */
 @media only screen and (min-width: 600px){
-a:before {
+a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 2px;
     content: "";
@@ -41,7 +41,7 @@ a:before {
     width: 0;
   }
 
-a:hover:before {
+a:hover:afters {
     width: 100%;
     left: 0;
   }
