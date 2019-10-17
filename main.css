@@ -199,7 +199,7 @@ background-image: url(header3.jpg);
 /* header media */
 @media only screen and (min-width: 600px){
   header .homepage-header {
-    background-position: center;
+    background-position: top center;
     height: 1200px;
   }
 
@@ -214,7 +214,7 @@ background-image: url(header3.jpg);
   header .homepage-header {
 
     background-position:center;
-    height: 820px;
+    height: 812px;
   }
   .header-text {
     top: 80%;
@@ -273,6 +273,7 @@ background-image: url(header3.jpg);
   padding: 30px 15px;
   font-family: metropolismedium;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .announcements div{
@@ -306,7 +307,7 @@ background-image: url(header3.jpg);
 
 @media only screen and (max-width: 600px){
   .announcements{
-    display: flinline !important;
+    display: linline !important;
   }
 
   .announcements h3{
@@ -326,12 +327,19 @@ background-image: url(header3.jpg);
 
 /*link boxes */
 .iconlinks {
-  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  flex-wrap;
   padding-top: 15px;
   padding-bottom: 30px;
+
 }
 
 @media only screen and (min-width: 600px){
+  .iconlinks{
+    justify-content: space-around;
+  }
+
   .linkbox {
     height: 300px;
     width: 300px;
@@ -339,9 +347,17 @@ background-image: url(header3.jpg);
 }
 
 @media only screen and (max-width: 600px){
+  .iconlinks{
+    width: auto;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
   .linkbox {
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 300px;
   }
 }
 
