@@ -22,6 +22,7 @@ a {
   text-decoration: none;
   display: block;
   color:white;
+
 }
 /*
 a:hover{
@@ -29,21 +30,15 @@ a:hover{
 */
 @media only screen and (min-width: 600px){
 a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 2px;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    background: white;
-    position: absolute;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+  display:block;
+  content: '';
+  border-bottom: solid 3px white;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
   }
 
 a:hover:after {
-    width: 100%;
-    left: 0;
+  transform: scaleX(1);
   }
 }
 
@@ -53,6 +48,7 @@ nav {
   display: flex;
   background-color: none;
   position: fixed;
+
   left: 1%;
   top: 0;
   width: 98%;
@@ -61,7 +57,7 @@ nav {
 }
 
 .navlogo {
-  letter-spacing: 5px;
+  letter-spacing: 0px;
 }
 
 nav a{
@@ -71,7 +67,6 @@ nav a{
 .navlinks>li {
   list-style: none;
   padding: 0px 10px;
-  letter-spacing: 3px;
 }
 
 .burgerline {
@@ -91,6 +86,10 @@ nav a{
 
 .opaqueNavbar a {
   color: black !important;
+}
+
+.opaqueNavbar a:after {
+  border-bottom: solid 3px black !important;
 }
 
 .opaqueNavbar a:after {
@@ -213,7 +212,7 @@ background-image: url(header3.jpg);
 
 @media only screen and (max-width: 600px){
   header .homepage-header {
-    
+
     background-position:center;
     height: 820px;
   }
