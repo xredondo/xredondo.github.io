@@ -357,6 +357,12 @@ header .subpage-header{
     height: 300px;
     width: 300px;
   }
+	#desktoplink {
+		display: block
+	}
+	#mobilelink {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 600px){
@@ -372,6 +378,13 @@ header .subpage-header{
     height: 300px;
     width: 300px;
   }
+	
+	#desktoplink {
+		display: none
+	}
+	#mobilelink {
+		display: block;
+	}
 }
 
 /* footer styling */
