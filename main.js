@@ -20,3 +20,10 @@ $(window).scroll(function () {
 		$('#navTransitionId').removeClass('opaqueNavbar');
 	}
 });
+
+function changeLink(){
+  if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent){
+    window.open("https://sleeperbot.app.link/esEa7TDlJN?_p=c11335dc9e0a7af2e11d90faea");
+  } else {
+    window.open("https://sleeper.app/leagues/"");}
+  };
