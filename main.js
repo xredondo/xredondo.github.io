@@ -1,14 +1,14 @@
 $(document).ready(function(){
-  $("button").click(function(){
+  $("#navbutton").click(function(){
     var navlinksdiv = $('#divdropdown')
     if (navlinksdiv.hasClass('hidden')){
       navlinksdiv.removeClass('hidden');
       $('#navTransitionId').addClass('opaqueNavbar');
-      $("button").addClass('clickedbutton')
+      $("#navbutton").addClass('clickedbutton')
     } else {
       navlinksdiv.addClass('hidden');
       $('#navTransitionId').removeClass('opaqueNavbar');
-      $("button").removeClass('clickedbutton')
+      $("#navbutton").removeClass('clickedbutton')
     }
   });
 });

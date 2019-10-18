@@ -214,7 +214,6 @@ background-image: url(header3.jpg);
   top:50%;
   color: white;
   font-family: metropolismedium;
-  font-size:40px;
   font-weight: bold;
 }
 
@@ -230,6 +229,10 @@ background-image: url(header3.jpg);
     font-size: 40px;
     font-weight: bold;
   }
+
+  .subpage-header h1 {
+    font-size: 70px;
+  }
 }
 
 @media only screen and (max-width: 600px){
@@ -241,6 +244,9 @@ background-image: url(header3.jpg);
   .header-text {
     top: 60%;
     font-size: 15px;
+  }
+  .subpage-header h1 {
+    font-size:40px;
   }
 }
 
@@ -399,6 +405,8 @@ background-image: url(header3.jpg);
     width: 300px;
   }
 }
+
+
 
 /* footer styling */
 footer {
