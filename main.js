@@ -21,10 +21,24 @@ $(window).scroll(function () {
 	}
 });
 
+function showImages(el) {
+    var windowHeight = jQuery( window ).height();
+    $(el).each(function(){
+        var thisPos = $(this).offset().top;
 
+        var topOfWindow = $(window).scrollTop();
+        if (topOfWindow + windowHeight - 200 > thisPos ) {
+            $(this).addClass("fadeIn");
+        }
+    });
+}
+
+// if the image in the window of browser when the page is loaded, show that image
 $(document).ready(function(){
-  if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
-    document.getElementById('SleeperLink').href ="https://sleeperbot.app.link/esEa7TDlJN?_p=c11335dc9e0a7af2e11d90faea";
-  } else {
-      document.getElementById('SleeperLink').href ="https://sleeper.app/leagues/";}
-  });
+        showImages('.fadeinClassDesig');
+});
+
+// if the image in the window of browser when scrolling the page, show that image
+$(window).scroll(function() {
+        showImages('.fadeinClassDesig');
+});
