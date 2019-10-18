@@ -172,6 +172,7 @@ nav a{
 
 header {
   display:block;
+  height:100%;
 }
 
 header .homepage-header {
@@ -196,24 +197,27 @@ background-image: url(header3.jpg);
   background-color: none;
 }
 
-header .subpage-header{
+.subpage-header{
   width:100%;
-  background-position: center;
-  height: 300px;
+  height: 250px;
   background-color: purple;
   text-align: center;
 }
 
 .subpage-header h1{
+  position: relative;
+  top:50%;
   color: white;
   font-family: metropolismedium;
+  font-size:40px;
+  font-weight: bold;
 }
 
 /* header media */
 @media only screen and (min-width: 600px){
   header .homepage-header {
-    background-position: top center;
-    height: 1200px;
+    background-position: top 20% center;
+    height: 100%;
   }
 
   .header-text {
@@ -227,7 +231,7 @@ header .subpage-header{
   header .homepage-header {
 
     background-position:center;
-    height: 812px;
+    height: 100%;
   }
   .header-text {
     top: 80%;
@@ -359,12 +363,6 @@ header .subpage-header{
     height: 300px;
     width: 300px;
   }
-	#desktoplink {
-		display: block
-	}
-	#mobilelink {
-		display: none;
-	}
 }
 
 @media only screen and (max-width: 600px){
@@ -380,13 +378,6 @@ header .subpage-header{
     height: 300px;
     width: 300px;
   }
-
-	#desktoplink {
-		display: none
-	}
-	#mobilelink {
-		display: block;
-	}
 }
 
 /* footer styling */
