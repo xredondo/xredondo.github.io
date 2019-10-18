@@ -197,9 +197,14 @@ background-image: url(header3.jpg);
   background-color: none;
 }
 
+.subpage-headerbox{
+  display: block;
+  height: 30%;
+}
+
 .subpage-header{
   width:100%;
-  height: 30%;
+  height: 100%;
   background-color: purple;
   text-align: center;
 }
@@ -324,7 +329,7 @@ background-image: url(header3.jpg);
 
 @media only screen and (max-width: 600px){
   .announcements{
-    display: linline !important;
+    display: inline !important;
   }
 
   .announcements h3{
@@ -338,7 +343,6 @@ background-image: url(header3.jpg);
 
   .ann-text{
     border-top: 5px solid black;
-
   }
 }
 
