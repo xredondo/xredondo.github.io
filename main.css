@@ -353,6 +353,8 @@ header .subpage-header{
     justify-content: space-around;
   }
 
+
+
   .linkbox {
     height: 300px;
     width: 300px;
@@ -378,7 +380,7 @@ header .subpage-header{
     height: 300px;
     width: 300px;
   }
-	
+
 	#desktoplink {
 		display: none
 	}
