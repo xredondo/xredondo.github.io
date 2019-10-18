@@ -302,7 +302,7 @@ background-image: url(header3.jpg);
   padding-bottom: 2px;
 }
 
-.ann-text p::first-letter {
+.ann-text p.bold1::first-letter {
   font-weight: bold;
 }
 
@@ -355,7 +355,6 @@ background-image: url(header3.jpg);
   padding-top: 10px;
   padding-left: 10px;
 }
-
 
 @media only screen and (min-width: 600px){
   .iconlinks{
