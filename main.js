@@ -42,3 +42,42 @@ $(document).ready(function(){
 $(window).scroll(function() {
         showImages('.fadeinClassDesig');
 });
+
+$(document).ready(function(){
+  $("#generalrules-button").click(function(){
+    var generalrulesdiv = $('#generalrules')
+    if (generalrulesdiv.hasClass('hiderules')){
+      generalrulesdiv.removeClass('hiderules');
+      $("#generalrules-button").addClass('logbtnclick')
+    } else {
+      generalrulesdiv.addClass('hiderules');
+      $("#generalrules-button").removeClass('logbtnclick')
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#scoringrules-button").click(function(){
+    var scoringrulesdiv = $('#scoringrules')
+    if (scoringrulesdiv.hasClass('hiderules')){
+      scoringrulesdiv.removeClass('hiderules');
+      $("#scoringrules-button").addClass('logbtnclick')
+    } else {
+      scoringrulesdiv.addClass('hiderules');
+      $("#scoringrules-button").removeClass('logbtnclick')
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#draft-button").click(function(){
+    var draftboarddiv = $('#draftboard')
+    if (draftboarddiv.hasClass('hiderules')){
+      draftboarddiv.removeClass('hiderules');
+      $("#draft-button").addClass('logbtnclick')
+    } else {
+      draftboarddiv.addClass('hiderules');
+      $("#draft-button").removeClass('logbtnclick')
+    }
+  });
+});
