@@ -496,12 +496,13 @@ th, td {
   padding: 10px;
   font-size: 20px;
   border: none;
-  background-color: purple;
+  background-image: linear-gradient(to right, purple, #8000ff);
   color: white;
+  border-radius: 20px;
 }
 
 #generalrules-button h4:hover, #scoringrules-button h4:hover, #draft-button h4:hover{
-    transform: scale(1.05);
+    transform: translateY(3px);
     cursor: pointer;
 }
 
@@ -569,9 +570,12 @@ th, td {
 
 .box-weeks div h3 {
   text-align: center;
-
   padding: 5px;
   border-bottom: 2px solid black;
+}
+
+.box-weeks div h3 a{
+
 }
 
 .weekslinks {
@@ -585,12 +589,15 @@ th, td {
   text-align: center;
 }
 
-.weekslinks div a {
-  color: black;
+.weekslinks div a{
+  padding:2px;
+  color: white;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #111e52, #0c89a8);
 }
 
-.weekslinks div a:hover{
-    transform: scale(1.2);
+.weekslinks div a:hover, .box-weeks div h3 a:hover {
+    transform: translateY(3px);
 }
 
 @media only screen and (min-width: 600px){
@@ -610,13 +617,15 @@ th, td {
 @media only screen and (max-width: 600px){
   .box-weeks div h3 {
       font-size: 20px;
+
   }
   .weekslinks div {
     padding: 5px;
+
   }
 
   .weekslinks div a {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
