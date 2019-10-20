@@ -449,13 +449,7 @@ footer {
     100%{opacity:1}
 }
 
-.seasonlogistics-divs{
-  flex-direction: column;
-}
 
-.seasonlogistics-divs div{
-  padding-bottom: 15px;
-}
 
 table {
   border: 1px solid black;
@@ -522,20 +516,22 @@ th, td {
 
 
 @media only screen and (min-width: 600px){
-  .seasonlogistics-divs{
-    positon: relative;
-    left: 10%;
+  .logisticsdivs{
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
   }
 
-  .draft-divs{
-    position: relative;
-    left: 10%;
-    flex-direction: row;
+  .logisticsdivs {
+    padding-left:10%;
   }
-  .org-row{
-    flex-direction: row;
-    display:flex;
-  }
+
+  .rulebtn {order:1; position:relative; left:5%}
+  .rulediv {order:4}
+  .scorebtn {order:2; position:relative; left:5%}
+  .scorediv {order:5}
+  .draftbtn {order:3; position:relative; left:5%}
+  .draftdiv {order:6}
 
   .tableposition {
     justify-content:center;
@@ -544,9 +540,17 @@ th, td {
 }
 
 @media only screen and (max-width: 600px){
-  .draft-divs{
+  .logisticsdivs{
     flex-direction: column;
+    align-items: center;
   }
+
+  .rulebtn {order:1}
+  .rulediv {order:2}
+  .scorebtn {order:3}
+  .scorediv {order:4}
+  .draftbtn {order:5}
+  .draftdiv {order:6}
 
   .mbtn-center{
     justify-content: center;
@@ -620,4 +624,9 @@ th, td {
   background-color: blue;
   color:white;
   padding:15px;
+}
+
+
+.logisticsdivs div{
+  padding: 15px;
 }

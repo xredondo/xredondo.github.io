@@ -49,6 +49,12 @@ $(document).ready(function(){
     if (generalrulesdiv.hasClass('hiderules')){
       generalrulesdiv.removeClass('hiderules');
       $("#generalrules-button").addClass('logbtnclick')
+      if (window.matchMedia('(min-width: 600px)').matches) {
+        $('#scoringrules').addClass('hiderules');
+        $("#scoringrules-button").removeClass('logbtnclick')
+        $('#draftboard').addClass('hiderules');
+        $("#draft-button").removeClass('logbtnclick')
+      }
     } else {
       generalrulesdiv.addClass('hiderules');
       $("#generalrules-button").removeClass('logbtnclick')
@@ -62,6 +68,12 @@ $(document).ready(function(){
     if (scoringrulesdiv.hasClass('hiderules')){
       scoringrulesdiv.removeClass('hiderules');
       $("#scoringrules-button").addClass('logbtnclick')
+      if (window.matchMedia('(min-width: 600px)').matches) {
+        $('#generalrules').addClass('hiderules');
+        $("#generalrules-button").removeClass('logbtnclick')
+        $('#draftboard').addClass('hiderules');
+        $("#draft-button").removeClass('logbtnclick')
+      }
     } else {
       scoringrulesdiv.addClass('hiderules');
       $("#scoringrules-button").removeClass('logbtnclick')
@@ -75,6 +87,12 @@ $(document).ready(function(){
     if (draftboarddiv.hasClass('hiderules')){
       draftboarddiv.removeClass('hiderules');
       $("#draft-button").addClass('logbtnclick')
+      if (window.matchMedia('(min-width: 600px)').matches) {
+        $('#generalrules').addClass('hiderules');
+        $("#generalrules-button").removeClass('logbtnclick')
+        $('#scoringrules').addClass('hiderules');
+        $("#scoringrules-button").removeClass('logbtnclick')
+      }
     } else {
       draftboarddiv.addClass('hiderules');
       $("#draft-button").removeClass('logbtnclick')
