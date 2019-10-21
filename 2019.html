@@ -47,7 +47,7 @@
           <p>The 2019 season is officially underway! We have expanded the league via
             nepotism to 12 owners and have switched platforms from ESPN to Sleeper.
           With the switch came new features such as draft-pick trading, decimal kicker
-        points, multi-team trading, and the ability to ad FAAB money to trades.</p>
+        points, multi-team trading, and the ability to add FAAB money to trades.</p>
       </div>
     </div>
 
@@ -302,12 +302,270 @@
           </button>
         </div>
 
-        <div class="hiderules col-10 draftdiv" id="draftboard">
-          <div style="overflow-x:auto;;">
-            <img src="2019draftboard.jpg" width="900px">
+        <div class="hiderules col-10 draftdiv box-tables" id="draftboard">
+          <div>
+            <table style="font-size:8px;" id="draftboardtable"> <!--DRAFT BOARD-->
+              <tr>
+                <th>Round</th>
+                <th style="padding: 3px 16px">Manager&nbsp;1</th>
+                <th style="padding: 3px 16px">Manager&nbsp;2</th>
+                <th style="padding: 3px 16px">Manager&nbsp;3</th>
+                <th style="padding: 3px 16px">Manager&nbsp;4</th>
+                <th style="padding: 3px 16px">Manager&nbsp;5</th>
+                <th style="padding: 3px 16px">Manager&nbsp;6</th>
+                <th style="padding: 3px 16px">Manager&nbsp;7</th>
+                <th style="padding: 3px 16px">Manager&nbsp;8</th>
+                <th style="padding: 3px 16px">Manager&nbsp;9</th>
+                <th style="padding: 3px 16px">Manager&nbsp;10</th>
+                <th style="padding: 3px 16px">Manager&nbsp;11</th>
+                <th style="padding: 3px 16px">Manager&nbsp;12</th>
+              </tr>
+
+              <tr>
+                <th>1</th>
+                <td id="RB">RB-NYG&emsp;1.1<br>Saquon<br>Barkley</td>
+                <td id="RB">RB-CAR&emsp;1.2<br>Christian<br>McCaffrey</td>
+                <td id="RB">RB-NO&nbsp;&emsp;1.3<br>Alvin<br>Kamara</td>
+                <td id="RB">RB-DAL&emsp;1.4<br>Ezekiel<br>Elliot</td>
+                <td id="RB">RB-NYJ&emsp;1.5<br>Le'Veon<br>Bell</td>
+                <td id="RB">RB-ARI&emsp;1.6<br>David<br>Johnson</td>
+                <td id="WR">WR-GB&nbsp;&emsp;1.7<br>Davante<br>Adams</td>
+                <td id="RB">RB-PIT&emsp;1.8<br>James<br>Conner</td>
+                <td id="WR">WR-HOU&emsp;1.9<br>DeAndre<br>Hopkins</td>
+                <td id="WR">WR-NO&nbsp;&emsp;1.10<br>Michael<br>Thomas</td>
+                <td id="RB">RB-LAR&emsp;1.11<br>Todd<br>Gurley</td>
+                <td id="WR">WR-CLE&emsp;1.12<br>Odell<br>Beckham Jr</td>
+              </tr>
+
+              <tr>
+                <th>2</th>
+                <td id="RB">RB-JAX&emsp;2.12<br>Leonard<br>Fournette</td>
+                <td id="WR">WR-SD&nbsp;&emsp;2.11<br>Keenan<br>Allen</td>
+                <td id="WR">WR-MIN&emsp;2.10<br>Adam<br>Thielen</td>
+                <td id="WR">WR-TB&nbsp;&emsp;2.9<br>Mike<br>Evans</td>
+                <td id="WR">WR-OAK&emsp;2.8<br>Antonio<br>Brown</td>
+                <td id="WR">WR-KC&nbsp;&emsp;2.7<br>Tyreek<br>Hill</td>
+                <td id="TE">TE-KC&nbsp;&emsp;2.6<br>Travis<br>Kelce</td>
+                <td id="WR">WR-PIT&emsp;2.5<br>Juju<br>Smith&#8209;Schuster</td>
+                <td id="RB">RB-CLE&emsp;2.4<br>Nick<br>Chubb</td>
+                <td id="RB">RB-MIN&emsp;2.3<br>Dalvin<br>Cook</td>
+                <td id="WR">WR-ATL&emsp;2.2<br>Julio<br>Jones</td>
+                <td id="RB">RB-CIN&emsp;2.1<br>Joe<br>Mixon</td>
+              </tr>
+
+              <tr>
+                <th>3</th>
+                <td id="WR">WR-DAL&emsp;3.1<br>Amari<br>Cooper</td>
+                <td id="RB">RB-GB&nbsp;&emsp;3.2<br>Aaron<br>Jones</td>
+                <td id="WR">WR-MIN&emsp;3.3<br>Stefon<br>Diggs</td>
+                <td id="RB">RB-OAK&emsp;3.4<br>Josh<br>Jacobs</td>
+                <td id="RB">RB-KC&nbsp;&emsp;3.5<br>Damien<br>Williams</td>
+                <td id="RB">RB-SEA&emsp;3.6<br>Chris<br>Carson</td>
+                <td id="RB">RB-DET&emsp;3.7<br>Kerryon<br>Johnson</td>
+                <td id="QB">QB-KC&nbsp;&emsp;3.8<br>Patrick<br>Mahomes</td>
+                <td id="RB">RB-ATL&emsp;3.9<br>Devonta<br>Freeman</td>
+                <td id="TE">TE-SF&nbsp;&emsp;3.10<br>George<br>Kittle</td>
+                <td id="WR">WR-NE&nbsp;&emsp;3.11<br>Julian<br>Edelman</td>
+                <td id="RB">RB-BAL&emsp;3.12<br>Mark<br>Ingram</td>
+              </tr>
+
+              <tr>
+                <th>4</th>
+                <td id="RB">RB-JAX&emsp;4.12<br>Tyler<br>Lockett</td>
+                <td id="WR">WR-TB&nbsp;&emsp;4.11<br>Chris<br>Godwin</td>
+                <td id="RB">RB-IND&emsp;4.10<br>Marlon<br>Mack</td>
+                <td id="WR">WR-LAR&emsp;4.9<br>Brandin<br>Cooks</td>
+                <td id="RB">RB-DEN&emsp;4.8<br>Philip<br>Lindsay</td>
+                <td id="RB">RB-NE&nbsp;&emsp;4.7<br>Sony<br>Michel</td>
+                <td id="RB">RB-CHI&emsp;4.6<br>David<br>Montgomery</td>
+                <td id="RB">RB-SD&nbsp;&emsp;4.5<br>Melvin<br>Gordon</td>
+                <td id="WR">WR-LAR&emsp;4.4<br>Robert<br>Woods</td>
+                <td id="RB">RB-TEN&emsp;4.3<br>Derrick<br>Henry</td>
+                <td id="QB">QB-HOU&emsp;4.2<br>Deshaun<br>Watson</td>
+                <td id="TE">TE-PHI&emsp;4.1<br>Zack<br>Ertz</td>
+              </tr>
+
+              <tr>
+                <th>5</th>
+                <td id="WR">WR-CIN&emsp;5.1<br>AJ<br>Green</td>
+                <td id="QB">QB-GB&nbsp;&emsp;5.2<br>Aaron<br>Rodgers</td>
+                <td id="WR">WR-IND&emsp;5.3<br>TY<br>Hilton</td>
+                <td id="TE">TE-TB&nbsp;&emsp;5.4<br>OJ<br>Howard</td>
+                <td id="WR">WR-CIN&emsp;5.5<br>Tyler<br>Boyd</td>
+                <td id="RB">WR-LAR&emsp;5.6<br>Cooper<br>Kupp</td>
+                <td id="WR">WR-DET&emsp;5.7<br>Kenny<br>Gollady</td>
+                <td id="WR">WR-LAC&emsp;5.8<br>Mike<br>Williams</td>
+                <td id="RB">RB-NE&nbsp;&emsp;5.9<br>James<br>White</td>
+                <td id="WR">WR-ATL&emsp;5.10<br>Calvin<br>Ridley</td>
+                <td id="RB">RB-SF&nbsp;&emsp;5.11<br>Tevin<br>Coleman</td>
+                <td id="RB">RB-CLE&emsp;5.12<br>Duke<br>Johnson</td>
+              </tr>
+
+              <tr>
+                <th>6</th>
+                <td id="TE">TE-NO&nbsp;&emsp;6.12<br>Jared<br>Cook</td>
+                <td id="TE">TE-SD&nbsp;&emsp;6.11<br>Hunter<br>Henry</td>
+                <td id="RB">RB-PHI&emsp;6.10<br>Miles<br>Sanders</td>
+                <td id="WR">WR-CAR&emsp;6.9<br>DJ<br>Moore</td>
+                <td id="WR">WR-JAX&emsp;6.8<br>Dede<br>Westbrook</td>
+                <td id="WR">WR-NYJ&emsp;6.7<br>Robby<br>Anderson</td>
+                <td id="WR">WR-CHI&emsp;6.6<br>Jarvis<br>Landry</td>
+                <td id="TE">TE-NYG&emsp;6.5<br>Evan<br>Engram</td>
+                <td id="RB">RB-LAC&emsp;6.4<br>Austin<br>Ekeler</td>
+                <td id="RB">RB-WAS&emsp;6.3<br>Derrius<br>Guice</td>
+                <td id="WR">WR-PHI&emsp;6.2<br>Alshon<br>Jeffery</td>
+                <td id="WR">WR-NE&nbsp;&emsp;6.1<br>Josh<br>Gordon</td>
+              </tr>
+
+              <tr>
+                <th>7</th>
+                <td id="RB">RB-CHI&emsp;7.1<br>Tarik<br>Cohen</td>
+                <td id="WR">WR-HOU&emsp;7.2<br>Will<br>Fuller</td>
+                <td id="QB">QB-ATL&emsp;7.3<br>Matt<br>Ryan</td>
+                <td id="RB">RB-KC&nbsp;&emsp;7.4<br>Darwin<br>Thompson</td>
+                <td id="RB">RB-MIA&emsp;7.5<br>Kenyan<br>Drake</td>
+                <td id="TE">TE-PIT&emsp;7.6<br>Vance<br>McDonald</td>
+                <td id="WR">WR-DEN&emsp;7.7<br>Emmanuel<br>Sanders</td>
+                <td id="RB">RB-SF&nbsp;&emsp;7.8<br>Matt<br>Brieda</td>
+                <td id="QB">QB-CLE&emsp;7.9<br>Baker<br>Mayfield</td>
+                <td id="WR">WR-CHI&emsp;7.10<br>Allen<br>Robinson</td>
+                <td id="RB">RB-LAR&emsp;7.11<br>Darrell<br>Henderson</td>
+                <td id="QB">QB-PHI&emsp;7.12<br>Carson<br>Wentz</td>
+              </tr>
+
+              <tr>
+                <th>8</th>
+                <td id="WR">WR-KC&nbsp;&emsp;8.12<br>Sammy<br>Watkins</td>
+                <td id="WR">WR-GB&nbsp;&emsp;8.11<br>Marquez<br>Valdes&#8209;Scalding</td>
+                <td id="WR">WR-CAR&emsp;8.10<br>Curtis<br>Samuel</td>
+                <td id="RB">RB-NO&nbsp;&emsp;8.9<br>Lativius<br>Murray</td>
+                <td id="RB">RB-SEA&emsp;8.8<br>Rashaad<br>Penny</td>
+                <td id="WR">WR-GB&nbsp;&emsp;8.7<br>Geronimo<br>Allison</td>
+                <td id="RB">RB-DAL&emsp;8.6<br>Tony<br>Pollard</td>
+                <td id="WR">WR-ARI&emsp;8.5<br>Christian<br>Kirk</td>
+                <td id="WR">WR-NYG&emsp;8.4<br>Sterling<br>Shepard</td>
+                <td id="RB">RB-PHI&emsp;8.3<br>Jordan<br>Howard</td>
+                <td id="TE">TE-CLE&emsp;8.2<br>David<br>Njoku</td>
+                <td id="DST">DST-CHI&emsp;8.1<br>Chicago<br>Bears</td>
+              </tr>
+
+              <tr>
+                <th>9</th>
+                <td id="QB">QB-SEA&emsp;9.1<br>Russell<br>Wilson</td>
+                <td id="RB">RB-BUF&emsp;9.2<br>LeSean<br>McCoy</td>
+                <td id="WR">WR-DET&emsp;9.3<br>Marvin<br>Jones</td>
+                <td id="WR">WR-PIT&emsp;9.4<br>James<br>Washington</td>
+                <td id="RB">RB-LAC&emsp;9.5<br>Justin<br>Jackson</td>
+                <td id="RB">RB-MIA&emsp;9.6<br>Kallen<br>Ballage</td>
+                <td id="DST">DST-LAR&emsp;9.7<br>Los Angeles<br>Rams</td>
+                <td id="DST">DST-JAX&emsp;9.8<br>Jacksonville<br>Jaguars</td>
+                <td id="RB">WR-PIT&emsp;9.9<br>Donte<br>Moncrief</td>
+                <td id="RB">RB-TB&nbsp;&emsp;9.10<br>Peyton<br>Barber</td>
+                <td id="WR">WR-TEN&emsp;9.11<br>Corey<br>Davis</td>
+                <td id="QB">QB-NO&nbsp;&emsp;9.12<br>Drew<br>Brees</td>
+              </tr>
+
+              <tr>
+                <th>10</th>
+                <td id="WR">WR-PHI&emsp;10.12<br>DeSean<br>Jackson</td>
+                <td id="DST">DST-BAL&emsp;10.11<br>Baltimore<br>Ravens</td>
+                <td id="TE">TE-IND&emsp;10.10<br>Eric<br>Ebron</td>
+                <td id="WR">WR-CHI&emsp;10.9<br>Anthony<br>Miller</td>
+                <td id="WR">WR-SF&nbsp;&emsp;10.8<br>Dante<br>Pettis</td>
+                <td id="QB">QB-BAL&emsp;10.7<br>Lamar<br>Jackson</td>
+                <td id="QB">QB-NE&nbsp;&emsp;10.6<br>Tom<br>Brady</td>
+                <td id="QB">QB-CAR&emsp;10.5<br>Cam<br>Newton</td>
+                <td id="RB">RB-DEN&emsp;10.4<br>Royce<br>Freeman</td>
+                <td id="WR">WR-OAK&emsp;10.3<br>Tyrell<br>Williams</td>
+                <td id="QB">QB-LAR&emsp;10.2<br>Jared<br>Goff</td>
+                <td id="RB">RB-CLE&emsp;10.1<br>Kareem<br>Hunt</td>
+              </tr>
+
+              <tr>
+                <th>11</th>
+                <td id="RB">RB-BUF&emsp;11.1<br>Devin<br>Singletary</td>
+                <td id="DST">DST-MIN&emsp;11.2<br>Minnesota<br>Vikings</td>
+                <td id="WR">WR-NYG&emsp;11.3<br>Golden<br>Tate</td>
+                <td id="RB">RB-BAL&emsp;11.4<br>Justice<br>Hill</td>
+                <td id="QB">QB-SD&nbsp;&emsp;11.5<br>Philip<br>Rivers</td>
+                <td id="WR">WR-DEN&emsp;11.6<br>Courtland<br>Sutton</td>
+                <td id="WR">WR-SF&nbsp;&emsp;11.7<br>Marquise<br>Goodwin</td>
+                <td id="WR">WR-DAL&emsp;11.8<br>Michael<br>Gallup</td>
+                <td id="TE">TE-CAR&emsp;11.9<br>Delanie<br>Walker</td>
+                <td id="RB">RB-ATL&emsp;11.10<br>Ito<br>Smith</td>
+                <td id="TE">TE-CAR&emsp;11.11<br>Greg<br>Olsen</td>
+                <td id="WR">WR-ARI&emsp;11.12<br>Larry<br>Fitzgerald</td>
+              </tr>
+
+              <tr>
+                <th>12</th>
+                <td id="TE">TE-DET&emsp;12.12<br>TJ<br>Hockenson</td>
+                <td id="QB">QB-DAL&emsp;12.11<br>Dak<br>Prescott</td>
+                <td id="DST">DST-CLE&emsp;12.10<br>Cleveland<br>Browns</td>
+                <td id="WR">WR-NJY&emsp;12.9<br>Jamison<br>Crowder</td>
+                <td id="WR">WR-SEA&emsp;12.8<br>DK<br>Metcalf</td>
+                <td id="RB">RB-MIN&emsp;12.7<br>Alexander<br>Mattison</td>
+                <td id="QB">QB-TB&nbsp;&emsp;12.6<br>Jameis<br>Winston</td>
+                <td id="RB">RB-WAS&emsp;12.5<br>Adrian<br>Paterson</td>
+                <td id="WR">WR-HOU&emsp;12.4<br>Keke<br>Coutee</td>
+                <td id="QB">QB-PIT&emsp;12.3<br>Ben<br>Rothlisberger</td>
+                <td id="RB">RB-PIT&emsp;12.2<br>Jaylen<br>Samuels</td>
+                <td id="TE">TE-ATL&emsp;12.1<br>Austin<br>Hooper</td>
+              </tr>
+
+              <tr>
+                <th>13</th>
+                <td id="K">K-LAR&emsp;13.1<br>Greg<br>Zuerlein</td>
+                <td id="WR">WR-BUF&emsp;13.2<br>John<br>Brown</td>
+                <td id="K">K-BAL&emsp;13.3<br>Justin<br>Tucker</td>
+                <td id="QB">QB-ARI&emsp;13.4<br>Kyler<br>Murray</td>
+                <td id="K">K-HOU&emsp;13.5<br>Ka'imi<br>1Fairbairn</td>
+                <td id="WR">WR-NO&nbsp;&emsp;13.6<br>Tre'Quan<br>Smith</td>
+                <td id="RB">RB-CIN&emsp;13.7<br>Giovani<br>Bernard</td>
+                <td id="K">K-KC&nbsp;&emsp;13.8<br>Harrison<br>Butker</td>
+                <td id="DST">DST-DEN&emsp;13.9<br>Denver<br>Broncos</td>
+                <td id="DST">DST-LAC&emsp;13.10<br>Los Angeles<br>Chargers</td>
+                <td id="K">K-NE&nbsp;&emsp;13.11<br>Stephan<br>Gostkowski</td>
+                <td id="WR">WR-KC&nbsp;&emsp;13.12<br>Mercole<br>Hardman</td>
+              </tr>
+
+              <tr>
+                <th>14</th>
+                <td id="QB">QB-NYJ&emsp;14.12<br>Sam<br>Darnold</td>
+                <td id="K">K-LAC&emsp;10.11<br>Michael<br>Badgley</td>
+                <td id="TE">TE-NYJ&nbsp;&emsp;14.10<br>Chris<br>Herndon IV</td>
+                <td id="WR">WR-SF&nbsp;&emsp;14.9<br>Deebo<br>Samuel</td>
+                <td id="WR">WR-TEN&emsp;14.8<br>AJ<br>Brown</td>
+                <td id="RB">RB-NE&nbsp;&emsp;14.7<br>Damien<br>Harris</td>
+                <td id="WR">WR-NE&nbsp;&emsp;14.6<br>Demariyius<br>Thomas</td>
+                <td id="RB">RB-TB&nbsp;&emsp;14.5<br>Ronald<br>Jones II</td>
+                <td id="WR">WR-LAR&emsp;14.4<br>Dion<br>Lewis</td>
+                <td id="RB">RB-TEN&emsp;14.3<br>Kirk<br>Cousins</td>
+                <td id="DST">DST-NE&emsp;14.2<br>New England<br>Patriots</td>
+                <td id="K">K-NO&nbsp;&emsp;14.1<br>Wil<br>Lutz</td>
+              </tr>
+
+              <tr>
+                <th>15</th>
+                <td id="DST">DST-PHI&emsp;15.1<br>Philadelphia<br>Eagles</td>
+                <td id="RB">RB-IND&emsp;15.2<br>Nyheim<br>Hines</td>
+                <td id="QB">QB-CHI&emsp;15.3<br>Mitch<br>Trubisky</td>
+                <td id="RB">RB-LAR&emsp;15.4<br>Malcolm<br>Brown</td>
+                <td id="WR">WR-BAL&emsp;15.5<br>Marquise<br>Brown</td>
+                <td id="DST">DST-SEA&emsp;15.6<br>Seattle<br>Seahawks</td>
+                <td id="WR">K-PHI&emsp;15.7<br>Jake<br>Ellioty</td>
+                <td id="TE">TE-CHI&emsp;15.8<br>Trey<br>Burton</td>
+                <td id="K">K-DAL&emsp;15.9<br>Brett<br>Maher</td>
+                <td id="K">K-SF&nbsp;&emsp;15.10<br>Robbie<br>Gould</td>
+                <td id="WR">WR-DAL&emsp;15.11<br>Randall<br>Cobb</td>
+                <td id="WR">WR-NE&nbsp;&emsp;15.12<br>N'Keal<br>Harry</td>
+              </tr>
+            </table>
+
           </div>
         </div>
       </div>
+
 
     <div class="box col-8 announcements">
       <h3>Standings</h3>
@@ -449,8 +707,8 @@
     </div>
 
     <div class="box box-weeks">
-      <div class="col-7">
-        <h3>Weeks</h3>
+      <div class="col-7 weektopper">
+        <h3><a href="/2019">2019 Season</a></h3>
       </div>
       <div class="col-7 mcol-12 weekslinks">
           <div><a href="2019/week1">Week&nbsp;1</a></div>
