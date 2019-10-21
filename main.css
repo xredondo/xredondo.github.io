@@ -668,4 +668,32 @@ th, td {
 
 .archives-divs div:hover {
     transform: translatex(5px);
+}
+
+.box-managers {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.managerdiv {
+  display:block;
+  font-family: metropolismedium;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.managerdiv h3 {
+  text-align: center;
+  padding-top:10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px){
+  .box-managers {
+    flex-direction: column;
   }
+}
