@@ -449,7 +449,40 @@ footer {
     100%{opacity:1}
 }
 
+.nextseasontn-divs{
+  display: inline-block;
+}
 
+.nextseason-btn{
+  font-family: metropolismedium;
+}
+
+.nextseason-btn p{
+  background-color: #0c89a8;
+  margin:5px;
+  padding:10px;
+  border-radius: 10px;
+}
+
+.nextseason-btn p a{
+  color:white;
+}
+
+.btnleft {
+  float:left;
+}
+
+.btnright {
+  float:right;
+}
+
+.btnleft:hover{
+  transform: translateX(-3px);
+}
+
+.btnrightt:hover{
+  transform: translateX(3px);
+}
 
 table {
   border: 1px solid black;
@@ -671,19 +704,16 @@ th, td {
 }
 
 .box-managers {
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 30px;
 }
 
 .managerdiv {
-  display:block;
+  display: block;
   font-family: metropolismedium;
   text-align: center;
-  flex-direction: column;
-  padding: 30px;
+  padding-top: 15px;
 }
+
 
 .managerdiv h3 {
   text-align: center;
@@ -692,8 +722,16 @@ th, td {
   font-size: 20px;
 }
 
+@media only screen and (min-width: 600px){
+  .box-managers {
+    justify-content:center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 600px){
   .box-managers {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
