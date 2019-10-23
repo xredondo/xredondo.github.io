@@ -574,11 +574,11 @@ th, td {
       justify-content: center;
   }
 
-  .rulebtn {order:1; position:relative; left:10%}
+  .rulebtn {order:1;display:flex;justify-content:center;}
   .rulediv {order:4}
-  .scorebtn {order:2; position:relative; left:10%}
+  .scorebtn {order:2;display:flex;justify-content:center;}
   .scorediv {order:5}
-  .draftbtn {order:3; position:relative; left:10%}
+  .draftbtn {order:3;display:flex;justify-content:center;}
   .draftdiv {order:6}
 
   .tableposition {
