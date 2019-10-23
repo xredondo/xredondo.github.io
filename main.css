@@ -403,10 +403,17 @@ background-image: url(header3.jpg);
 		margin-right:auto;
 	}
 	
-	.center-icon a, .center-icon p{
+	.center-icon a{
 		display:block;
 		margin-left:auto;
 		margin-right:auto;
+	}
+	
+	.center-icon p{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		width: 300px;
 	}
 	
   .linkbox {
