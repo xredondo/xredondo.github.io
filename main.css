@@ -396,6 +396,12 @@ background-image: url(header3.jpg);
       opacity:0.8;
       transform: scale(1.2);
   }
+	
+	.center-icon {
+		display:flex;
+		justify-content: center;
+	}
+	
   .linkbox {
     height: 300px;
     width: 300px;
