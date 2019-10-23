@@ -482,11 +482,10 @@ footer {
   margin:5px;
   padding:10px;
   border-radius: 10px;
+color:white;
 }
 
-.nextseason-btn p a{
-  color:white;
-}
+
 
 .btnleft {
   float:left;
