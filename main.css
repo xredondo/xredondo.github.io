@@ -498,7 +498,6 @@ th, td {
 .box-tables {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   overflow-x: auto;
   white-space: nowrap;
 }
@@ -564,11 +563,15 @@ th, td {
   .logisticsdivs{
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content: space-around;
+    justify-content:center;
   }
 
   .logisticsdivs {
     padding-left:0%;
+  }
+
+  .box-tables{
+      justify-content: center;
   }
 
   .rulebtn {order:1; position:relative; left:10%}
@@ -588,6 +591,12 @@ th, td {
   .logisticsdivs{
     flex-direction: column;
     align-items: center;
+    margin-left:-10px;
+    margin-right:-10px;
+  }
+
+  .box-tables{
+      justify-content: flex-start;
   }
 
   .rulebtn {order:1}
