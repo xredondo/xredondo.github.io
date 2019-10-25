@@ -397,26 +397,26 @@ background-image: url(header3.jpg);
       opacity:0.8;
       transform: scale(1.2);
   }
-	
+
 	.center-icon {
 		display:block;
 		margin-left:auto;
 		margin-right:auto;
 	}
-	
+
 	.center-icon a{
 		display:block;
 		margin-left:auto;
 		margin-right:auto;
 	}
-	
+
 	.center-icon p{
 		display:block;
 		margin-left:auto;
 		margin-right:auto;
 		width: 300px;
 	}
-	
+
   .linkbox {
     height: 300px;
     width: 300px;
@@ -537,6 +537,16 @@ th, td {
   background-color: #8000ff;
   color: white;
   padding: 10px;
+}
+
+#generalrules div, #scoringrules div{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.draftdiv div{
+  margin-left:15px;
+  margin-right:15px;
 }
 
 .scoring-label{
@@ -699,12 +709,12 @@ th, td {
 .standingstables th{
   background-color: #0c89a8;
   color:white;
-  padding:15px;
+  padding:10px;
 }
 
 
 .logisticsdivs div{
-  padding: 15px;
+  padding: 15px 0px;
 }
 
 .archives-divs{
