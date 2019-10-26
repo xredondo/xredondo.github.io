@@ -718,21 +718,53 @@ th, td {
 }
 
 .archives-divs{
+  display:flex;
   flex-direction: column;
-  align-items: center;
+  padding-left:15px;
+  padding-right:15px;
+  overflow-x:auto;
 }
 
-.archives-divs div{
-  padding: 15px;
-  margin: 5px;
-  border-radius: 30px;
-
+#podiumdiv{
+  margin-top: 30px;
+  margin-bottom:15px;
+  margin-left:auto;
+  margin-right:auto;
+  width:auto;
+  height:650px;
+  position:relative;
 }
 
-.archives-divs div a{
+#podiumdiv p{
+  position: absolute;
+  text-align:center;
   font-family: metropolismedium;
-  font-size: 30px;
+  font-weight: bold;
   color:white;
+}
+
+#firstplace {
+  width: 273px;
+  top:72%;
+  left:35%;
+}
+
+#secondplace{
+  width: 261px;
+  top:76%;
+  left:3.5%;
+}
+
+#thirdplace{
+  width: 256px;
+  top:78.6%;
+  left:67.8%;
+}
+
+#podiumyear{
+  font-size:40px;
+  width:900px;
+  bottom:1.5%;
 }
 
 
