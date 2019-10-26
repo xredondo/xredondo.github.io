@@ -55,7 +55,589 @@
         <h3>Season Summary</h3>
       </div>
       <div class="col-6 mcol-11 ann-text">
-          <p>In the second year of this fantasy football league, the league made the decision to convert from nfl.com to ESPN. However not much data exists from this year as ESPN seemingly purged their pre-2016 fanastyf ootball league data. The only data accurate data from this year is the draft data. The rules data included are the 2015 ESPN because it is assumed that the precocious league did not understand the complexities of diverging from the defaults. If the 2015 fantasy data is gathered, this page and corresponding pages will be populated.</p>
+          <p>In the second year of this fantasy football league, the league made the decision to convert from nfl.com to ESPN. However not much data exists from this year as ESPN seemingly purged their pre-2016 fanastyf ootball league data. The only data accurate data from this year is the draft data. The manager names on the draft board have been substituted with vague but still identifiable names because the actual draft board maintained managers real names and the discussion on using real names has not occured at the time of this paragraph.</p>
+          <p>The rules data included are the 2015 ESPN because presumably the precocious league did not understand the complexities of diverging from the defaults. If the 2015 fantasy data is gathered, this page and corresponding pages will be populated.</p>
+      </div>
+    </div>
+
+    <div class="box col-12 logisticsdivs mrow">
+      <div class="mbtn-center col-4 rulebtn">
+        <button id="generalrules-button">
+          <h4>2015&nbsp;General&nbsp;Rules<br>&#x25bc;</h4>
+        </button>
+      </div>
+
+      <div class="box-tables hiderules col-12 rulediv" id="generalrules">
+        <div>
+          <table id="rostertable">
+            <tr><th>Roster</th></tr>
+            <tr><td>QB</td></tr>
+            <tr><td>RB</td></tr>
+            <tr><td>RB</td></tr>
+            <tr><td>WR</td></tr>
+            <tr><td>WR</td></tr>
+            <tr><td>TE</td></tr>
+            <tr><td>RB/WR/TE Flex</td></tr>
+            <tr><td>K</td></tr>
+            <tr><td>DST</td></tr>
+            <tr><td>7 Bench</td></tr>
+          </table>
+        </div>
+        <div>
+          <table style="width:300px;" id="rostertable">
+            <tr><th colspan="2">Waiver Settings</th></tr>
+            <tr>
+              <td>System</td>
+              <td>Reverse Order<br>Standings</td>
+            </tr>
+            <tr>
+              <th>Special Condition</th>
+              <th>Day Claim is<br>Processed</th>
+            </tr>
+            <tr>
+              <td>Player's Team<br>Starts/Plays Game</td>
+              <td>Thurs</td>
+            </tr>
+            <tr>
+              <td>Player is Dropped</td>
+              <td>2 Days After Drop</td>
+            </tr>
+            <tr>
+              <tr><td colspan="2">If no Applicable Special Condition,<br>Player Status is a FA</td></tr>
+            </tr>
+
+          </table>
+        </div>
+
+        <div>
+          <table id="rostertable">
+            <tr><th>Trade Authority</th></tr>
+            <tr><td>League Veto</td></tr>
+          </table>
+
+          <div style="height:20px;"></div>
+
+            <table id="rostertable">
+              <tr><th>Playoffs</th></tr>
+              <tr><td>2 Week Rounds<br>4 Teams<br>Weeks&emsp;<span style="float:right">13 & 14</span><br><span style="float:right">15 & 16</span></td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="mbtn-center col-4 scorebtn">
+        <button id="scoringrules-button">
+          <h4>2015&nbsp;Scoring&nbsp;Rules<br>&#x25bc;</h4>
+        </button>
+      </div>
+
+      <div class="box-tables hiderules col-12 scorediv" id="scoringrules">
+        <div>
+          <table id="scoringtable">
+            <tr><th colspan="2">Passing</th></tr>
+            <tr>
+              <td class="scoring-label">Passing Yard</td>
+              <td>0.04</td>
+            </tr>
+            <tr>
+              <td>Passing TD</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>2-Pt Conversion</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Pass Intercepted</td>
+              <td>-2</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table id="scoringtable">
+            <tr><th colspan="2">Rushing</th></tr>
+            <tr>
+              <td class="scoring-label">Rushing Yard</td>
+              <td>0.10</td>
+            </tr>
+            <tr>
+              <td>Rushing TD</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>2-Pt Conversion</td>
+              <td>2</td>
+            </tr>
+          </table>
+
+          <div style="height:20px;"></div>
+
+          <table id="scoringtable">
+            <tr><th colspan="2">Receiving</th></tr>
+            <tr>
+              <td>Receiving Yard</td>
+              <td>0.10</td>
+            </tr>
+            <tr>
+              <td>Receiving TD</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>2-Pt Conversion</td>
+              <td>2</td>
+            </tr>
+          </table>
+
+          <div style="height:20px;"></div>
+
+          <table id="scoringtable">
+            <tr><th colspan="2">Misc</th></tr>
+            <tr>
+              <td class="scoring-label">Fumble Lost</td>
+              <td>-2</td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <table id="scoringtable">
+            <tr><th colspan="2">Kicking</th></tr>
+            <tr>
+              <td class="scoring-label">30-39 yd FG Made</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>40-49 yd FG Made</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>50+ yd FG Made</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>PAT Made</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>FG Miss</td>
+              <td>-1</td>
+            </tr>
+            <tr>
+              <td>PAT Miss</td>
+              <td>-1</td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <table id="scoringtable">
+            <tr><th colspan="2">Defense/Special Teams</th></tr>
+            <tr>
+              <td class="scoring-label">Defense TD</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>Special Teams TD</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>Sack</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Interception</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Fumble Recovery</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Safety</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Blocked FG</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Blocked Punt</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>0 Points Allowed</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>1-6 Points Allowed</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>7-13 Points Allowed</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>14-17 Points Allowed</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>18-27 Points Allowed</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>28-34 Points Allowed</td>
+              <td>-1</td>
+            </tr>
+            <tr>
+              <td>35-45 Points Allowed</td>
+              <td>-3</td>
+            </tr>
+            <tr>
+              <td>46+ Points Allowed</td>
+              <td>-5</td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <table id="scoringtable">
+            <tr><th colspan="2">Defense/Special Teams</th></tr>
+            <tr>
+              <td>Less than 100yd Allowed</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>100-199 yd Allowed</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>200-299 yd Allowed</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>300-349 yd Allowed</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>350-399 yd Allowed</td>
+              <td>-1</td>
+            </tr>
+            <tr>
+              <td>400-449 yd Allowed</td>
+              <td>-3</td>
+            </tr>
+            <tr>
+              <td>450-499 yd Allowed</td>
+              <td>-5</td>
+            </tr>
+            <tr>
+              <td>500-549 yd Allowed</td>
+              <td>-6</td>
+            </tr>
+            <tr>
+              <td>550+ yd Allowed</td>
+              <td>-7</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="mbtn-center col-4 draftbtn" style="padding-left:15px;padding-right:15px;">
+        <button id="draft-button">
+          <h4>2015&nbsp;Draft&nbsp;Board<br>&#x25bc;</h4>
+        </button>
+      </div>
+
+      <div class="hiderules col-12 draftdiv box-tables" id="draftboard">
+        <div>
+          <table style="font-size:11px;" id="draftboardtable"> <!--DRAFT BOARD-->
+            <tr>
+              <th>Round</th>
+              <th style="padding: 3px 17.9px">Bad Haircut</th>
+              <th style="padding: 3px 13.9px">Good Haircut</th>
+              <th style="padding: 3px 16px">No entiendo<br>el Futbol<br>American</th>
+              <th style="padding: 3px 28.6px">Lax Bro</th>
+              <th style="padding: 3px 24.5px">Nado Boi</th>
+              <th style="padding: 3px 18px">Spongebob<br>References</th>
+              <th style="padding: 3px 15.5px">Donde Esta?</th>
+              <th style="padding: 3px 28.6px">Sad Boi</th>
+            </tr>
+
+            <tr>
+            <th>1</th>
+              <td id="RB">RB-PIT<span style="float:right">1.1</span><br>Le'Veon<br>Bell</td>
+              <td id="TE">TE-NE<span style="float:right">1.2</span><br>Rob<br>Gronkowski</td>
+              <td id="RB">RB-SEA<span style="float:right">1.3</span><br>Marshawn<br>Lynch</td>
+              <td id="RB">RB-GB<span style="float:right">1.4</span><br>Eddie<br>Lacy</td>
+              <td id="QB">QB-GB<span style="float:right">1.5</span><br>Aaron<br>Rodgers</td>
+              <td id="QB">QB-IND<span style="float:right">1.6</span><br>Andrew<br>Luck</td>
+              <td id="RB">RB-MIN<span style="float:right">1.7</span><br>Adrian<br>Peterson</td>
+              <td id="RB">RB-KC<span style="float:right">1.8</span><br>Jamaal<br>Charles</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td id="RB">RB-CIN<span style="float:right">2.8</span><br>Jeremy<br>Hill</td>
+              <td id="WR">WR-DAL<span style="float:right">2.7</span><br>Dez<br>Bryant</td>
+              <td id="RB">RB-CHI<span style="float:right">2.6</span><br>Matt<br>Forte</td>
+              <td id="WR">WR-DEN<span style="float:right">2.5</span><br>Demaryius<br>Thomas</td>
+              <td id="RB">RB-BUF<span style="float:right">2.4</span><br>LeSean<br>McCoy</td>
+              <td id="RB">RB-PHI<span style="float:right">2.3</span><br>DeMarco<br>Murray</td>
+              <td id="RB">RB-DEN<span style="float:right">2.2</span><br>CJ<br>Anderson</td>
+              <td id="WR">WR-PIT<span style="float:right">2.1</span><br>Antonio<br>Brown</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td id="WR">WR-NYG<span style="float:right">3.1</span><br>Odell<br>Beckham Jr</td>
+              <td id="WR">WR-DET<span style="float:right">3.2</span><br>Calvin<br>Johnson</td>
+              <td id="WR">WR-GB<span style="float:right">3.3</span><br>Randall<br>Cobb</td>
+              <td id="WR">WR-ATL<span style="float:right">3.4</span><br>Julio<br>Jones</td>
+              <td id="WR">WR-DEN<span style="float:right">3.5</span><br>Emmanuel<br>Sanders</td>
+              <td id="WR">WR-IND<span style="float:right">3.6</span><br>TY<br>Hilton</td>
+              <td id="WR">WR-CIN<span style="float:right">3.7</span><br>AJ<br>Green</td>
+              <td id="RB">RB-MIA<span style="float:right">3.8</span><br>Lamar<br>Miller</td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td id="WR">WR-HOU<span style="float:right">4.8</span><br>DeAndre<br>Hopkins</td>
+              <td id="RB">RB-BAL<span style="float:right">4.7</span><br>Justin<br>Forsett</td>
+              <td id="TE">TE-SEA<span style="float:right">4.6</span><br>Jimmy<br>Graham</td>
+              <td id="RB">RB-WAS<span style="float:right">4.5</span><br>Alfred<br>Morris</td>
+              <td id="RB">RB-SF<span style="float:right">4.4</span><br>Carlos<br>Hyde</td>
+              <td id="RB">RB-NO<span style="float:right">4.3</span><br>Mark<br>Ingram</td>
+              <td id="WR">WR-TB<span style="float:right">4.2</span><br>Mike<br>Evans</td>
+              <td id="WR">WR-CHI<span style="float:right">4.1</span><br>Alshon<br>Jeffery</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td id="WR">WR-NO<span style="float:right">5.1</span><br>Brandin<br>Cooks</td>
+              <td id="QB">QB-SEA<span style="float:right">5.2</span><br>Russell<br>Wilson</td>
+              <td id="QB">QB-DEN<span style="float:right">5.3</span><br>Peyton<br>Manning</td>
+              <td id="RB">RB-SD<span style="float:right">5.4</span><br>Melvin<br>Gordon</td>
+              <td id="DST">DST-SEA<span style="float:right">5.5</span><br>Seattle<br>Seahawks</td>
+              <td id="WR">WR-SD<span style="float:right">5.6</span><br>Keenan<br>Allen</td>
+              <td id="WR">WR-PHI<span style="float:right">5.7</span><br>Jordan<br>Matthews</td>
+              <td id="RB">RB-IND<span style="float:right">5.8</span><br>Frank<br>Gore</td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td id="WR">WR-WAS<span style="float:right">6.8</span><br>DeSean<br>Jackson</td>
+              <td id="RB">RB-NO<span style="float:right">6.7</span><br>CJ<br>Spiller</td>
+              <td id="WR">WR-DET<span style="float:right">6.6</span><br>Golden<br>Tate</td>
+              <td id="QB">QB-PIT<span style="float:right">6.5</span><br>Ben<br>Roethlisberger</td>
+              <td id="K">K-NE<span style="float:right">6.4</span><br>Stephan<br>Gostkowski</td>
+              <td id="WR">WR-NE<span style="float:right">6.3</span><br>Julian<br>Edelman</td>
+              <td id="RB">RB-CAR<span style="float:right">6.2</span><br>Jonathan<br>Stewart</td>
+              <td id="QB">QB-NO<span style="float:right">6.1</span><br>Drew<br>Brees</td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td id="WR">WR-TB<span style="float:right">7.1</span><br>Vincent<br>Jackson</td>
+              <td id="QB">QB-DAL<span style="float:right">7.2</span><br>Tony<br>Romo</td>
+              <td id="RB">RB-DET<span style="float:right">7.3</span><br>Joique<br>Bell</td>
+              <td id="RB">RB-DAL<span style="float:right">7.4</span><br>Joseph<br>Randle</td>
+              <td id="WR">WR-GB<span style="float:right">7.5</span><br>Davante<br>Adams</td>
+              <td id="K">K-IND<span style="float:right">7.6</span><br>Adam<br>Vinatieri</td>
+              <td id="RB">RB-STL<span style="float:right">7.7</span><br>Todd<br>Gurley</td>
+              <td id="DST">DST-BUF<span style="float:right">7.8</span><br>Buffalo<br>Bills</td>
+            </tr>
+            <tr>
+              <th>8</th>
+              <td id="RB">RB-ARI<span style="float:right">8.8</span><br>Andre<br>Ellington</td>
+              <td id="WR">WR-IND<span style="float:right">8.7</span><br>Andre<br>Johnson</td>
+              <td id="RB">RB-OAK<span style="float:right">8.6</span><br>Latavius<br>Murray</td>
+              <td id="TE">TE-CAR<span style="float:right">8.5</span><br>Greg<br>Olsen</td>
+              <td id="RB">RB-JAX<span style="float:right">8.4</span><br>TJ<br>Yeldon</td>
+              <td id="TE">TE-KC<span style="float:right">8.3</span><br>Travis<br>Kelce</td>
+              <td id="WR">WR-OAK<span style="float:right">8.2</span><br>Amari<br>Cooper</td>
+              <td id="WR">WR-BUF<span style="float:right">8.1</span><br>Sammy<br>Watkins</td>
+            </tr>
+            <tr>
+              <th>9</th>
+              <td id="RB">RB-HOU<span style="float:right">9.1</span><br>Arian<br>Foster</td>
+              <td id="RB">RB-SD<span style="float:right">9.2</span><br>Danny<br>Woodhead</td>
+              <td id="WR">WR-KC<span style="float:right">9.3</span><br>Jeremy<br>Maclin</td>
+              <td id="DST">DST-HOU<span style="float:right">9.4</span><br>Houston<br>Texans</td>
+              <td id="TE">TE-CHI<span style="float:right">9.5</span><br>Martellus<br>Bennett</td>
+              <td id="WR">WR-NYJ<span style="float:right">9.6</span><br>Brandon<br>Marshall</td>
+              <td id="RB">RB-NYJ<span style="float:right">9.7</span><br>Chris<br>Ivory</td>
+              <td id="QB">QB-ATL<span style="float:right">9.8</span><br>Matt<br>Ryan</td>
+            </tr>
+            <tr>
+              <th>10</th>
+              <td id="WR">WR-MIA<span style="float:right">10.8</span><br>Jarvis<br>Landry</td>
+              <td id="QB">QB-NE<span style="float:right">10.7</span><br>Tom<br>Brady</td>
+              <td id="WR">WR-PHI<span style="float:right">10.6</span><br>Nelson<br>Agholor</td>
+              <td id="WR">WR-MIN<span style="float:right">10.5</span><br>Mike<br>Wallace</td>
+              <td id="QB">QB-SD<span style="float:right">10.4</span><br>Philip<br>Rivers</td>
+              <td id="RB">RB-NYG<span style="float:right">10.3</span><br>Rashad<br>Jennings</td>
+              <td id="RB">RB-CIN<span style="float:right">10.2</span><br>Giovani<br>Bernard</td>
+              <td id="TE">TE-DAL<span style="float:right">10.1</span><br>Jason<br>Witten</td>
+            </tr>
+            <tr>
+              <th>11</th>
+              <td id="RB">RB-NE<span style="float:right">11.1</span><br>LeGarrette<br>Blount</td>
+              <td id="TE">TE-IND<span style="float:right">11.2</span><br>Dwayne<br>Allen</td>
+              <td id="QB">QB-CAR<span style="float:right">11.3</span><br>Cam<br>Newton</td>
+              <td id="RB">RB-TB<span style="float:right">11.4</span><br>Doug<br>Martin</td>
+              <td id="RB">RB-CLE<span style="float:right">11.5</span><br>Isaiah<br>Crowell</td>
+              <td id="QB">QB-MIA<span style="float:right">11.6</span><br>Ryan<br>Tannehill</td>
+              <td id="WR">WR-JAX<span style="float:right">11.7</span><br>Allen<br>Robinson</td>
+              <td id="WR">WR-NYJ<span style="float:right">11.8</span><br>Eric<br>Decker</td>
+            </tr>
+            <tr>
+              <th>12</th>
+              <td id="RB">RB-PHI<span style="float:right">12.8</span><br>Ryan<br>Matthews</td>
+              <td id="K">K-DAL<span style="float:right">12.7</span><br>Dan<br>Bailey</td>
+              <td id="WR">WR-BUF<span style="float:right">12.6</span><br>Percy<br>Harvin</td>
+              <td id="QB">QB-NYG<span style="float:right">12.5</span><br>Eli<br>Manning</td>
+              <td id="WR">WR-ATL<span style="float:right">12.4</span><br>Roddy<br>White</td>
+              <td id="DST">DST-CAR<span style="float:right">12.3</span><br>Carolina<br>Panthers</td>
+              <td id="TE">TE-WSH<span style="float:right">12.2</span><br>Jordan<br>Cameron</td>
+              <td id="WR">WR-MIN<span style="float:right">12.1</span><br>Charles<br>Johnson</td>
+            </tr>
+            <tr>
+              <th>13</th>
+              <td id="TE">TE-PHI<span style="float:right">13.1</span><br>Zach<br>Ertz</td>
+              <td id="DST">DST-NYJ<span style="float:right">13.2</span><br>New York<br>Jets</td>
+              <td id="RB">RB-MIA<span style="float:right">13.3</span><br>Jonas<br>Gray</td>
+              <td id="K">K-SEA<span style="float:right">13.4</span><br>Steven<br>Hauschka</td>
+              <td id="WR">WR-SF<span style="float:right">13.5</span><br>Torrey<br>Smith</td>
+              <td id="RB">RB-NYG<span style="float:right">13.6</span><br>Shane<br>Vereen</td>
+              <td id="RB">RB-STL<span style="float:right">13.7</span><br>Tre<br>Mason</td>
+              <td id="TE">TE-TEN<span style="float:right">13.8</span><br>Delanie<br>Walker</td>
+            </tr>
+            <tr>
+              <th>14</th>
+              <td id="QB">QB-PHI<span style="float:right">14.8</span><br>Sam<br>Bradford</td>
+              <td id="RB">RB-HOU<span style="float:right">14.7</span><br>Alfred<br>Blue</td>
+              <td id="K">K-BUF<span style="float:right">14.6</span><br>Dan<br>Carpetner</td>
+              <td id="DST">DST-BAL<span style="float:right">14.5</span><br>Baltimore<br>Ravens</td>
+              <td id="RB">RB-DET<span style="float:right">14.4</span><br>Ameer<br>Abdullah</td>
+              <td id="RB">RB-ATL<span style="float:right">14.3</span><br>Devonta<br>Freeman</td>
+              <td id="DST">DST-STL<span style="float:right">14.2</span><br>St Louis<br>Rams</td>
+              <td id="K">K-DEN<span style="float:right">14.1</span><br>Brandon<br>McManus</td>
+            </tr>
+            <tr>
+              <th>15</th>
+              <td id="K">K-PHI<span style="float:right">15.1</span><br>Cody<br>Parkey</td>
+              <td id="WR">WR-ARI<span style="float:right">15.2</span><br>Larry<br>Fitzgerald</td>
+              <td id="TE">TE-DEN<span style="float:right">15.3</span><br>Owen<br>Daniels</td>
+              <td id="WR">WR-BAL<span style="float:right">15.4</span><br>Steve<br>Smith Sr</td>
+              <td id="RB">RB-NYG<span style="float:right">15.5</span><br>Andre<br>Williams</td>
+              <td id="K">K-GB<span style="float:right">15.6</span><br>Mason<br>Crosby</td>
+              <td id="K">K-BAL<span style="float:right">15.7</span><br>Justin<br>Tucker</td>
+              <td id="K">K-ATL<span style="float:right">15.8</span><br>Matt<br>Bryant</td>
+            </tr>
+            <tr>
+              <th>16</th>
+              <td id="DST">DST-NE<span style="float:right">16.8</span><br>New England<br>Patriots</td>
+              <td id="QB">QB-DET<span style="float:right">16.7</span><br>Matthew<br>Stafford</td>
+              <td id="DST">DST-MIA<span style="float:right">16.6</span><br>Miami<br>Dolphins</td>
+              <td id="QB">QB-ARI<span style="float:right">16.5</span><br>Michael<br>Floyd</td>
+              <td id="TE">TE-SD<span style="float:right">16.4</span><br>Antonio<br>Gates</td>
+              <td id="DST">DST-PHI<span style="float:right">16.3</span><br>Philadelphia<br>Eagles</td>
+              <td id="K">K-SF<span style="float:right">16.2</span><br>Phil<br>Dawson</td>
+              <td id="DST">DST-NE<span style="float:right">16.1</span><br>Denver<br>Broncos</td>
+            </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="box col-8 announcements">
+      <h3>Regular Season Standings</h3>
+    </div>
+    <div class="box col-12 box-tables tableposition">
+
+      <div>
+          <table class="standingstables" style="width:auto; text-align:center;" id="standingstables">
+            <tr>
+              <th>Place</th>
+              <th>Team</th>
+              <th>Record</th>
+              <th style="padding:0px 15.6px">Points<br>For</th>
+              <th style="">Points<br>Against</th>
+              <th>Waiver<br>Moves</th>
+            </tr>
+            <tr>
+              <td>-</td>
+          <!-- INSERT 1ST PLACE HERE-->
+              <td>Bad Haircut</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+
+            </tr>
+            <tr>
+              <td>-</td>
+          <!-- INSERT 2ND PLACE HERE-->
+              <td>Good Haircut</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+
+            </tr>
+            <tr>
+              <td>-</td>
+          <!-- INSERT 3RD PLACE HERE-->
+              <td>No entiendo el Futbol American</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+
+            </tr>
+            <tr>
+              <td>-</td>
+            <!-- INSERT 4TH PLACE HERE-->
+              <td>Lax Bro</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+
+            </tr>
+            <tr>
+              <td>-</td>
+            <!-- INSERT 5TH PLACE HERE-->
+              <td>Nado Boi</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+            </tr>
+            <tr>
+              <td>-</td>
+            <!-- INSERT 6TH PLACE HERE-->
+              <td>Spongebob References</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+
+            </tr>
+            <tr>
+              <td>-</td>
+            <!-- INSERT 7TH PLACE HERE-->
+              <td>Donde Esta?</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+
+            </tr>
+            <tr>
+              <td>-</td>
+            <!-- INSERT 8TH PLACE HERE-->
+              <td>Sad Boi</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+              <td>?</td>
+            </tr>
+
+          </table>
       </div>
     </div>
 
