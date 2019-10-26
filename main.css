@@ -19,6 +19,14 @@ html,body{
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'faustinamedium';
+  src: url('faustina-medium-webfont.woff2') format('woff2'),
+       url('faustina-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
   display: block;
@@ -735,12 +743,17 @@ th, td {
   position:relative;
 }
 
+#podiumdiv img{
+  width:900px;
+  height:650px;
+}
+
 #podiumdiv p{
   position: absolute;
   text-align:center;
-  font-family: metropolismedium;
+  font-family: faustinamedium;
   font-weight: bold;
-  color:white;
+  color:#E8E7E6;
 }
 
 #firstplace {
@@ -764,7 +777,7 @@ th, td {
 #podiumyear{
   font-size:40px;
   width:900px;
-  bottom:1.5%;
+  bottom:1.7%;
 }
 
 
