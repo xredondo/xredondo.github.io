@@ -6,7 +6,7 @@
 
 html,body{
   height:100%;
-
+  width:100%;
   margin:0;
   -webkit-font-smoothing: antialiased;
 }
@@ -512,17 +512,6 @@ color:white;
   transform: translateX(3px);
 }
 
-table {
-  border: 1px solid black;
-  border-collapse: collapse;
-  font-family: metropolismedium;
-}
-
-th, td {
-  border: 1px solid black;
-  padding: 6px;
-}
-
 .box-tables {
   display: flex;
   flex-direction: row;
@@ -536,9 +525,32 @@ th, td {
   padding-bottom:30px;
 }
 
+.logisticsdivs div{
+  padding: 15px 0px;
+}
+
+#rostertable, #scoringtable, #draftboardtable, #standingstables{
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: metropolismedium;
+}
 
 #scoringtable {
   width: 200px;
+}
+
+#rostertable th, #scoringtable th,
+#draftboardtable th, #standingstables th,
+#rostertable td, #scoringtable td,
+#draftboardtable td, #standingstables td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+#standingstables th{
+  background-color: #0c89a8;
+  color:white;
+  padding:10px;
 }
 
 #rostertable th, #scoringtable th {
@@ -714,16 +726,7 @@ th, td {
   }
 }
 
-.standingstables th{
-  background-color: #0c89a8;
-  color:white;
-  padding:10px;
-}
 
-
-.logisticsdivs div{
-  padding: 15px 0px;
-}
 
 .archives-divs{
   display:flex;
@@ -805,6 +808,7 @@ th, td {
   .box-managers {
     justify-content:center;
     align-items: center;
+  }
 }
 
 @media only screen and (max-width: 600px){
@@ -813,4 +817,57 @@ th, td {
     justify-content: center;
     align-items: center;
   }
+}
+
+#playofftable {
+    border-collapse: collapse;Table-layout:fixed;
+    font-family: metropolismedium;
+}
+
+#playofftable th, #playofftable td{
+  height:20px;
+}
+
+#right-down-cell{
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+}
+
+#down-right-cell{
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#right-cell{
+  border-right:5px solid black;
+}
+
+#right-up-cell{
+  border-bottom:5px solid black;
+  border-right:5px solid black;
+}
+
+#playoffteam{
+  font-size: 15px;
+  background-color:#8C8C8C;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color:white;
+}
+
+
+#playoffteam-winner{
+  font-size: 15px;
+  background-color:#595959;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color:white;
+}
+
+#playoffround{
+  padding-left:70px;
+  padding-right: 70px;
+  padding-top:20px;
+  padding-bottom:30px;
+  font-size:20px;
 }
