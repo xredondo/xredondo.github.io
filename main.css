@@ -239,6 +239,12 @@ background-image: url(header3.jpg);
   background-repeat: no-repeat;
 }
 
+.seasons-header{
+  background-image:url(seasonsheader.png);
+  background-position:top center;
+  background-repeat: no-repeat;
+}
+
 /* header media */
 @media only screen and (min-width: 600px){
   header .homepage-header {
@@ -263,6 +269,9 @@ background-image: url(header3.jpg);
   .archives-header{
   background-size: 100% ;
   }
+  .seasons-header{
+  background-size: 100% ;
+  }
 }
 
 @media only screen and (max-width: 600px){
@@ -285,6 +294,10 @@ background-image: url(header3.jpg);
   }
 
   .archives-header{
+    background-size: 700px ;
+  }
+
+  .seasons-header{
     background-size: 700px ;
   }
 }
@@ -509,7 +522,7 @@ footer {
 }
 
 .nextseason-btn p{
-  background-color: #0c89a8;
+  background-color: #3063FF;
   margin:5px;
   padding:10px;
   border-radius: 10px;
@@ -570,7 +583,7 @@ color:white;
 }
 
 #standingstables th{
-  background-color: #0c89a8;
+  background-color: #3063FF;
   color:white;
   padding:10px;
 }
@@ -712,7 +725,7 @@ color:white;
   padding:2px;
   color: white;
   border-radius: 20px;
-  background-image: linear-gradient(to right, #111e52, #0c89a8);
+  background-image: linear-gradient(to right, #111e52, #3063FF);
 }
 
 .weekslinks div a:hover, .box-weeks div h3 a:hover {
