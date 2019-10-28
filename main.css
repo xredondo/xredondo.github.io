@@ -216,7 +216,6 @@ background-image: url(header3.jpg);
 
 .subpage-headerbox{
   display: block;
-  height: 30%;
 }
 
 .subpage-header{
@@ -234,6 +233,12 @@ background-image: url(header3.jpg);
   font-weight: bold;
 }
 
+.archives-header{
+  background-image:url(archivesheader.png);
+  background-position:top center;
+  background-repeat: no-repeat;
+}
+
 /* header media */
 @media only screen and (min-width: 600px){
   header .homepage-header {
@@ -247,8 +252,16 @@ background-image: url(header3.jpg);
     font-weight: bold;
   }
 
+  .subpage-headerbox{
+    height: 50%;
+  }
+
   .subpage-header h1 {
     font-size: 70px;
+  }
+
+  .archives-header{
+  background-size: 100% ;
   }
 }
 
@@ -262,8 +275,17 @@ background-image: url(header3.jpg);
     top: 75%;
     font-size: 15px;
   }
+
+  .subpage-headerbox{
+    height: 40%;
+  }
+
   .subpage-header h1 {
     font-size:40px;
+  }
+
+  .archives-header{
+    background-size: 700px ;
   }
 }
 
