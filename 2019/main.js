@@ -99,3 +99,93 @@ $(document).ready(function(){
     }
   });
 });
+
+$(document).ready(function(){
+  $('#matchup1-div').click(function() {
+      if($('#matchup1-scores').hasClass('hidestats')){
+        $('#matchup1-scores').removeClass('hidestats');
+        $('#matchup2-scores').addClass('hidestats');
+        $('#matchup3-scores').addClass('hidestats');
+        $('#matchup4-scores').addClass('hidestats');
+        $('#matchup5-scores').addClass('hidestats');
+        $('#matchup6-scores').addClass('hidestats');
+      } else {
+        $('#matchup1-scores').addClass('hidestats');
+      }
+  });
+});
+
+$(document).ready(function(){
+  $('#matchup2-div').click(function() {
+      if($('#matchup2-scores').hasClass('hidestats')){
+        $('#matchup2-scores').removeClass('hidestats');
+        $('#matchup1-scores').addClass('hidestats');
+        $('#matchup3-scores').addClass('hidestats');
+        $('#matchup4-scores').addClass('hidestats');
+        $('#matchup5-scores').addClass('hidestats');
+        $('#matchup6-scores').addClass('hidestats');
+      } else {
+        $('#matchup2-scores').addClass('hidestats');
+      }
+  });
+});
+
+$(document).ready(function(){
+  $('#matchup3-div').click(function() {
+      if($('#matchup3-scores').hasClass('hidestats')){
+        $('#matchup3-scores').removeClass('hidestats');
+        $('#matchup1-scores').addClass('hidestats');
+        $('#matchup2-scores').addClass('hidestats');
+        $('#matchup4-scores').addClass('hidestats');
+        $('#matchup5-scores').addClass('hidestats');
+        $('#matchup6-scores').addClass('hidestats');
+      } else {
+        $('#matchup3-scores').addClass('hidestats');
+      }
+  });
+});
+
+$(document).ready(function(){
+  $('#matchup4-div').click(function() {
+      if($('#matchup4-scores').hasClass('hidestats')){
+        $('#matchup4-scores').removeClass('hidestats');
+        $('#matchup1-scores').addClass('hidestats');
+        $('#matchup2-scores').addClass('hidestats');
+        $('#matchup3-scores').addClass('hidestats');
+        $('#matchup5-scores').addClass('hidestats');
+        $('#matchup6-scores').addClass('hidestats');
+      } else {
+        $('#matchup4-scores').addClass('hidestats');
+      }
+  });
+});
+
+$(document).ready(function(){
+  $('#matchup5-div').click(function() {
+      if($('#matchup5-scores').hasClass('hidestats')){
+        $('#matchup5-scores').removeClass('hidestats');
+        $('#matchup1-scores').addClass('hidestats');
+        $('#matchup2-scores').addClass('hidestats');
+        $('#matchup3-scores').addClass('hidestats');
+        $('#matchup4-scores').addClass('hidestats');
+        $('#matchup6-scores').addClass('hidestats');
+      } else {
+        $('#matchup5-scores').addClass('hidestats');
+      }
+  });
+});
+
+$(document).ready(function(){
+  $('#matchup6-div').click(function() {
+      if($('#matchup6-scores').hasClass('hidestats')){
+        $('#matchup6-scores').removeClass('hidestats');
+        $('#matchup1-scores').addClass('hidestats');
+        $('#matchup2-scores').addClass('hidestats');
+        $('#matchup3-scores').addClass('hidestats');
+        $('#matchup4-scores').addClass('hidestats');
+        $('#matchup5-scores').addClass('hidestats');
+      } else {
+        $('#matchup6-scores').addClass('hidestats');
+      }
+  });
+});

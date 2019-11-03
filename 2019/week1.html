@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="main.css" rel="stylesheet" type='text/css'>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/artifacts/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/artifacts/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/artifacts/favicon-16x16.png">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
@@ -42,27 +42,26 @@
     <div class="box" >
       <div class="col-12 nextseasonbtn-divs">
         <div class="nextseason-btn btnleft">
-          <a href="/2018/week16"><p>&#x25c0;&#xFE0E; 2018 Week 16</p></a>
+          <a href="/2018/week16"><p>&#x25c0;&#xFE0E; 2018</p></a>
         </div>
         <div class="nextseason-btn btnright">
-          <a href="/2019/week2"><p>2019 Week 2 &#x25b6;&#xFE0E;</p></a>
+          <a href="/2019/week2"><p>Week 2 &#x25b6;&#xFE0E;</p></a>
         </div>
       </div>
     </div>
-<!--
-    <div class="box announcements" id="scroll-fadein">
-      <div class="col-3 mcol-11">
+
+    <div class="box weekly-summary" id="scroll-fadein">
+      <div class="col-8 mcol-11">
         <h3>Week 1 Notable Events</h3>
       </div>
-      <div class="col-7 mcol-11 ann-text">
-          <p></p>
+      <div class="col-9 mcol-11 weekly-text">
+          <p>STUFF</p>
       </div>
     </div>
-  -->
 
     <div class="matchups-box">
-
-      <div class="matchup-row"> <!--MATCHUP 1-->
+<!--MATCHUP 1-->
+      <div class="matchup-row" id="matchup1-div">
         <div class="matchup-item" style="left:0;">
           <div class="matchup-item-mgr-logo matchup-item-L-align">
           </div>
@@ -93,159 +92,702 @@
         <div class="matchup-mid-sign versus-sym"><p>VS</p></div>
       </div>
 
-      <div class="matchup-row"> <!--MATCHUP 2-->
+      <div class="matchup-stats hidestats" id="matchup1-scores">
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>18/30 cmp, 203 yd, 1 TD, 3 car, 8 yd</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>QB</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>RB</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>RB</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>WR</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>WR</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>TE</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>FLX</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>K</p></div>
+        </div>
+
+        <div class="matchup-stats-row" style="border:none !important;">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>DST</p></div>
+        </div>
+
+        <div class="string-bench">
+          <h3>BENCH</h3>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>BN</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>BN</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>BN</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>BN</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>BN</p></div>
+        </div>
+
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>BN</p></div>
+        </div>
+
+      </div>
+
+<!--MATCHUP 2-->
+      <div class="matchup-row" id="matchup2-div">
         <div class="matchup-item" style="left:0;">
           <div class="matchup-item-mgr-logo matchup-item-L-align">
           </div>
           <div class="matchup-item-overall">
             <div class="matchup-item-info matchup-item-L-align">
               <p>Baby Zeke Decided to Play</p>
-              <p>76.06</p>
+              <p>0-0</p>
             </div>
             <div class="matchup-item-totalscore score-R-align">
-              <p>0-0</p>
+              <p>76.06</p>
             </div>
           </div>
         </div>
-
         <div class="matchup-item" style="right:0">
           <div class="matchup-item-mgr-logo matchup-item-R-align">
           </div>
           <div class="matchup-item-overall">
             <div class="matchup-item-info matchup-item-R-align">
               <p>SavedbyTheBell8</p>
-              <p>100.22</p>
-            </div>
-            <div class="matchup-item-totalscore score-L-align">
               <p>0-0</p>
             </div>
-          </div>
-        </div>
-        <div class="matchup-mid-sign versus-sym"><p>VS</p></div>
-      </div>
-
-      <div class="matchup-row"> <!--MATCHUP 3-->
-        <div class="matchup-item" style="left:0;">
-          <div class="matchup-item-mgr-logo matchup-item-L-align">
-          </div>
-          <div class="matchup-item-overall">
-            <div class="matchup-item-info matchup-item-L-align">
-              <p>TEAM NAME</p>
-              <p>RECORD</p>
-            </div>
-            <div class="matchup-item-totalscore score-R-align">
-              <p>SCORE</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="matchup-item" style="right:0">
-          <div class="matchup-item-mgr-logo matchup-item-R-align">
-          </div>
-          <div class="matchup-item-overall">
-            <div class="matchup-item-info matchup-item-R-align">
-              <p>TEAM NAME</p>
-              <p>RECORD</p>
-            </div>
             <div class="matchup-item-totalscore score-L-align">
-              <p>SCORE</p>
+              <p>100.22</p>
             </div>
           </div>
         </div>
         <div class="matchup-mid-sign versus-sym"><p>VS</p></div>
       </div>
 
-      <div class="matchup-row"> <!--MATCHUP 4-->
+      <div class="matchup-stats hidestats" id="matchup2-scores">
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>QB</p></div>
+        </div>
+
+
+      </div>
+
+<!--MATCHUP 3-->
+      <div class="matchup-row" id="matchup3-div">
         <div class="matchup-item" style="left:0;">
           <div class="matchup-item-mgr-logo matchup-item-L-align">
           </div>
           <div class="matchup-item-overall">
             <div class="matchup-item-info matchup-item-L-align">
-              <p>TEAM NAME</p>
-              <p>RECORD</p>
+              <p>Member when Cal was 4-0</p>
+              <p>0-0</p>
             </div>
             <div class="matchup-item-totalscore score-R-align">
-              <p>SCORE</p>
+              <p>122.84</p>
             </div>
           </div>
         </div>
-
         <div class="matchup-item" style="right:0">
           <div class="matchup-item-mgr-logo matchup-item-R-align">
           </div>
           <div class="matchup-item-overall">
             <div class="matchup-item-info matchup-item-R-align">
-              <p>TEAM NAME</p>
-              <p>RECORD</p>
+              <p>Pink Panthers</p>
+              <p>0-0</p>
             </div>
             <div class="matchup-item-totalscore score-L-align">
-              <p>SCORE</p>
+              <p>115.86</p>
             </div>
           </div>
         </div>
         <div class="matchup-mid-sign versus-sym"><p>VS</p></div>
       </div>
+      <div class="matchup-stats hidestats" id="matchup3-scores">
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>QB</p></div>
+        </div>
 
-      <div class="matchup-row"> <!--MATCHUP 5-->
+
+      </div>
+
+<!--MATCHUP 4-->
+      <div class="matchup-row" id="matchup4-div">
         <div class="matchup-item" style="left:0;">
           <div class="matchup-item-mgr-logo matchup-item-L-align">
           </div>
           <div class="matchup-item-overall">
             <div class="matchup-item-info matchup-item-L-align">
-              <p>TEAM NAME</p>
-              <p>RECORD</p>
+              <p>We love morning woods</p>
+              <p>0-0</p>
             </div>
             <div class="matchup-item-totalscore score-R-align">
-              <p>SCORE</p>
+              <p>123.10</p>
             </div>
           </div>
         </div>
-
         <div class="matchup-item" style="right:0">
           <div class="matchup-item-mgr-logo matchup-item-R-align">
           </div>
           <div class="matchup-item-overall">
             <div class="matchup-item-info matchup-item-R-align">
-              <p>TEAM NAME</p>
-              <p>RECORD</p>
+              <p>My homies and Mahomes</p>
+              <p>0-0</p>
             </div>
             <div class="matchup-item-totalscore score-L-align">
-              <p>SCORE</p>
+              <p>110.82</p>
             </div>
           </div>
         </div>
         <div class="matchup-mid-sign versus-sym"><p>VS</p></div>
       </div>
+      <div class="matchup-stats hidestats" id="matchup4-scores">
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>QB</p></div>
+        </div>
 
-      <div class="matchup-row"> <!--MATCHUP 6-->
+
+      </div>
+
+<!--MATCHUP 5-->
+      <div class="matchup-row" id="matchup5-div">
         <div class="matchup-item" style="left:0;">
           <div class="matchup-item-mgr-logo matchup-item-L-align">
           </div>
           <div class="matchup-item-overall">
             <div class="matchup-item-info matchup-item-L-align">
-              <p>TEAM NAME</p>
-              <p>RECORD</p>
+              <p>#Not Settling</p>
+              <p>0-0</p>
             </div>
             <div class="matchup-item-totalscore score-R-align">
-              <p>SCORE</p>
+              <p>119.42</p>
             </div>
           </div>
         </div>
-
         <div class="matchup-item" style="right:0">
           <div class="matchup-item-mgr-logo matchup-item-R-align">
           </div>
           <div class="matchup-item-overall">
             <div class="matchup-item-info matchup-item-R-align">
-              <p>TEAM NAME</p>
-              <p>RECORD</p>
+              <p>Post Mahomes</p>
+              <p>0-0</p>
             </div>
             <div class="matchup-item-totalscore score-L-align">
-              <p>SCORE</p>
+              <p>133.20</p>
             </div>
           </div>
         </div>
         <div class="matchup-mid-sign versus-sym"><p>VS</p></div>
+      </div>
+      <div class="matchup-stats hidestats" id="matchup5-scores">
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>QB</p></div>
+        </div>
+
+
+      </div>
+
+<!--MATCHUP 6-->
+      <div class="matchup-row" id="matchup6-div">
+        <div class="matchup-item" style="left:0;">
+          <div class="matchup-item-mgr-logo matchup-item-L-align">
+          </div>
+          <div class="matchup-item-overall">
+            <div class="matchup-item-info matchup-item-L-align">
+              <p>A Team Has No Name</p>
+              <p>0-0</p>
+            </div>
+            <div class="matchup-item-totalscore score-R-align">
+              <p>106.96</p>
+            </div>
+          </div>
+        </div>
+        <div class="matchup-item" style="right:0">
+          <div class="matchup-item-mgr-logo matchup-item-R-align">
+          </div>
+          <div class="matchup-item-overall">
+            <div class="matchup-item-info matchup-item-R-align">
+              <p>Muscle Russell</p>
+              <p>0-0</p>
+            </div>
+            <div class="matchup-item-totalscore score-L-align">
+              <p>101.54</p>
+            </div>
+          </div>
+        </div>
+        <div class="matchup-mid-sign versus-sym"><p>VS</p></div>
+      </div>
+      <div class="matchup-stats hidestats" id="matchup6-scores">
+        <div class="matchup-stats-row">
+          <div class="matchup-item" style="left:0;">
+            <div class="matchup-player-info matchup-item-L-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-R-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-item" style="right:0;">
+            <div class="matchup-player-info matchup-item-R-align">
+              <h3>PLAYER NAME</h3>
+              <p>NFL TEAM</p>
+              <p>GAME SCORE</p>
+              <p>STATS</p>
+            </div>
+            <div class="matchup-player-score score-L-align">
+              <p>SCORE</p>
+            </div>
+          </div>
+          <div class="matchup-mid-sign position-sym"><p>QB</p></div>
+        </div>
+
+
       </div>
 
     </div>
@@ -257,7 +799,7 @@
         <h3><a href="/2019">2019 Season</a></h3>
       </div>
       <div class="col-9 mcol-12 weekslinks">
-          <div><a href="2019/week1">Week&nbsp;1</a></div>
+          <div class="active-week"><a href="2019/week1">Week&nbsp;1</a></div>
           <div><a href="2019/week2">Week&nbsp;2</a></div>
           <div><a href="2019/week3">Week&nbsp;3</a></div>
           <div><a href="2019/week4">Week&nbsp;4</a></div>

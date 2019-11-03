@@ -371,6 +371,22 @@ background-image: url(header3.jpg);
   font-weight: bold;
 }
 
+.weekly-summary{
+  padding: 30px 15px;
+  font-family: metropolismedium;
+  align-items:center;
+  text-align:center;
+  flex-direction:column;
+}
+
+.weekly-summary div{
+  padding: 8px;
+}
+
+.weekly-text{
+  border-top: 5px solid black;
+}
+
 @media only screen and (min-width: 600px){
   .announcements h3{
     text-align: right;
@@ -383,6 +399,13 @@ background-image: url(header3.jpg);
 
   .ann-text{
     border-left: 5px solid black;
+  }
+  .weekly-summary h3{
+    font-size:30px;
+  }
+
+  .weekly-summary p{
+    font-size:20px;
   }
 }
 
@@ -404,6 +427,14 @@ background-image: url(header3.jpg);
 
   .ann-text{
     border-top: 5px solid black;
+  }
+
+  .weekly-summary h3{
+    font-size:20px;
+  }
+
+  .weekly-summary p{
+    font-size:15px;
   }
 }
 
@@ -734,8 +765,8 @@ color:white;
     transform: translateY(3px);
 }
 
-.weekslinks div a:active{
-  background-image: linear-gradient(to right, #2B8270, #20F0C5);
+.active-week a{
+  background-image: linear-gradient(to right, #2B8270, #20F0C5) !important;
 }
 
 @media only screen and (min-width: 600px){
@@ -927,15 +958,24 @@ color:white;
   display:block;
   position:relative;
   margin:0 auto;
-  width:95%;
+  width:96%;
   font-family:metropolismedium;
+  background-color: #22406F;
+  padding-top:5px;
+  padding-bottom:10px;
+  border-radius:10px;
 }
 
 .matchup-row{
   position:relative;
-  width:100%;
-  height:100px;
-  margin-top:20px;
+  width:98%;
+  margin-top:10px;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.matchup-row:hover{
+  cursor:pointer;
 }
 
 .matchup-item{
@@ -967,19 +1007,20 @@ color:white;
 .matchup-item-info{
   position:absolute;
   bottom:3px;
-  font-size:16px;
   color:#C8C8C8;
 }
 
+.matchup-item-info p{
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
 .matchup-item-L-align{
-  left:15px;
+  text-align:left;
 }
 
 .matchup-item-R-align{
-  right:15px;
-}
-
-.matchup-item-R-align>p{
   text-align:right;
 }
 
@@ -987,7 +1028,6 @@ color:white;
   position:absolute;
   top:30%;
   transform: translateY(-50%);
-  font-size:30px;
   color:white;
 }
 
@@ -1001,8 +1041,6 @@ color:white;
 
 .matchup-mid-sign{
   position:absolute;
-  width:50px;
-  height:50px;
   left:50%;
   top:50%;
   transform: translate(-50%, -50%);
@@ -1017,8 +1055,154 @@ color:white;
 }
 
 .versus-sym{
-  border-radius:25px;
+  border-radius:20px;
+  width:40px;
+  height:40px;
   background-color:red;
   color:white;
   top:60% !important;
+}
+
+.position-sym{
+  background-color:red;
+  width:40px;
+  height:30px;
+  color:white;
+  font-size:14px;
+  border-radius:5px;
+}
+
+.matchup-stats{
+  position:relative;
+  width:100%;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.matchup-stats-row{
+  position:relative;
+  width:100%;
+  height:80px;
+  border-bottom: solid 0.5px white;
+}
+
+.matchup-player-info{
+  position:absolute;
+  height:auto;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.string-bench{
+  width:100%;
+  text-align:center;
+  color:white;
+}
+
+.matchup-player-info h3{
+  color:white;
+}
+
+.matchup-player-info p{
+  color:#C8C8C8;
+  width:100%;
+}
+
+.matchup-player-score{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  color:white;
+}
+
+.hidestats{
+  display:none;
+}
+
+
+@media only screen and (min-width: 600px){
+  .matchup-row{
+    height:100px;
+  }
+
+  .matchup-item-info{
+    font-size:16px;
+    width:85%;
+  }
+
+  .matchup-item-totalscore{
+    font-size:30px;
+  }
+
+  .matchup-player-score{
+    font-size:20px;
+  }
+
+  .matchup-player-info{
+    width:100%;
+  }
+
+  .matchup-player-info h3{
+    font-size:16px;
+  }
+
+  .matchup-player-info p{
+    font-size:12px;
+  }
+
+  .string-bench{
+    font-size:20px;
+  }
+
+  .matchup-item-L-align{
+    left:15px;
+  }
+
+  .matchup-item-R-align{
+    right:15px;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  .matchup-row{
+    height:90px;
+  }
+
+  .matchup-item-info{
+    font-size:12px;
+    width:80%;
+  }
+
+  .matchup-item-totalscore{
+    font-size:20px;
+  }
+
+  .matchup-player-score{
+    font-size:13px;
+  }
+
+  .matchup-player-info{
+    width:80%;
+  }
+
+  .matchup-player-info h3{
+    font-size:12px;
+  }
+
+  .matchup-player-info p{
+    font-size:10px;
+  }
+
+  .string-bench{
+    font-size:15px;
+  }
+
+  .matchup-item-L-align{
+    left:15px;
+  }
+
+  .matchup-item-R-align{
+    right:15px;
+  }
 }
