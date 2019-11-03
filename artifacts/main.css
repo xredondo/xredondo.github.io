@@ -867,29 +867,52 @@ color:white;
 
 
 .box-managers {
+  display:flex;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left:auto;
+  margin-right:auto;
   flex-wrap: wrap;
 }
 
 .managerdiv {
   display: block;
   font-family: metropolismedium;
-  text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-left: auto;
+  margin-right:auto;
+
 }
 
+.managerdiv img, .managerdiv h3, .managerdiv p {
+  position:relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.managerdiv img{
+  width:325px;
+  height:325px;
+}
 
 .managerdiv h3 {
   text-align: center;
   padding-top:10px;
   padding-bottom: 10px;
-  font-size: 20px;
+  font-size: 23px;
+}
+
+.managerdiv p{
+  width:325px;
+  font-size:15px;
+  text-align:left;
+  padding-bottom:5px;
 }
 
 @media only screen and (min-width: 600px){
   .box-managers {
     justify-content:center;
-    align-items: center;
   }
 }
 
@@ -958,15 +981,24 @@ color:white;
   display:block;
   position:relative;
   margin:0 auto;
-  width:95%;
+  width:96%;
   font-family:metropolismedium;
   background-color: #22406F;
+  padding-top:5px;
+  padding-bottom:10px;
+  border-radius:10px;
 }
 
 .matchup-row{
   position:relative;
-  width:100%;
-  margin-top:20px;
+  width:98%;
+  margin-top:10px;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.matchup-row:hover{
+  cursor:pointer;
 }
 
 .matchup-item{
@@ -1046,9 +1078,9 @@ color:white;
 }
 
 .versus-sym{
-  border-radius:25px;
-  width:50px;
-  height:50px;
+  border-radius:20px;
+  width:40px;
+  height:40px;
   background-color:red;
   color:white;
   top:60% !important;
@@ -1060,12 +1092,12 @@ color:white;
   height:30px;
   color:white;
   font-size:14px;
+  border-radius:5px;
 }
 
 .matchup-stats{
   position:relative;
   width:100%;
-  height:80px;
   padding-top:5px;
   padding-bottom:5px;
 }
@@ -1073,15 +1105,21 @@ color:white;
 .matchup-stats-row{
   position:relative;
   width:100%;
-  height:100%;
+  height:80px;
   border-bottom: solid 0.5px white;
 }
 
 .matchup-player-info{
   position:absolute;
-  bottom:0;
-  height:100%;
-  background-color:purple;
+  height:auto;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.string-bench{
+  width:100%;
+  text-align:center;
+  color:white;
 }
 
 .matchup-player-info h3{
@@ -1099,6 +1137,11 @@ color:white;
   transform: translateY(-50%);
   color:white;
 }
+
+.hidestats{
+  display:none;
+}
+
 
 @media only screen and (min-width: 600px){
   .matchup-row{
@@ -1128,6 +1171,10 @@ color:white;
 
   .matchup-player-info p{
     font-size:12px;
+  }
+
+  .string-bench{
+    font-size:20px;
   }
 
   .matchup-item-L-align{
@@ -1168,6 +1215,10 @@ color:white;
 
   .matchup-player-info p{
     font-size:10px;
+  }
+
+  .string-bench{
+    font-size:15px;
   }
 
   .matchup-item-L-align{
